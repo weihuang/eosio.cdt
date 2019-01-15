@@ -4,11 +4,15 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 
   var current;
   var pluginConfig = {};
+  var conf;
 
   // Update the select with a list of versions
   function updateVersions(versions) {
 
-   console.log(versions)
+    if(!versions)
+      return
+
+
     current = $('.versions-minimal select').val() || current;
 
     // Cleanup existing selector
@@ -22,8 +26,8 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     });
     var $select = $li.find('select');
 
+
     $.each(versions.versions, function(i, version) {
-      console.log(version);
       var $option = $('<option>', {
         'selected': window.location.href.indexOf(version.value) !== -1,
         'value': version.value,
@@ -33,24 +37,21 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     });
 
     $select.change(function() {
-      var filtered = $.grep(versions, function(v) {
-        return v.value === $select.val();
-      });
-      // Get actual version Object from array
-      var version = filtered[0];
+      var version;
+      $( "option:selected", this ).each(function() {
+       version = $( this ).text()
+     });
 
-      var filePath = window.location.href.replace(gitbook.state.bookRoot, '');
-      window.location.href = version.includeFilepath ? (version.value + filePath) : version.value;
+      window.location.href = `${conf["custom-header-next"].base_path}/${version}`
     });
 
     $li.prependTo('.book-summary ul.summary');
   }
 
   gitbook.events.bind('start', function (e, config) {
+    conf = config
     versions = config["versions-minimal"] || {};
-    console.log(config);
-    console.log(versions)
-    $.getJSON(versions.gitbookConfigURL, updateVersions);
+    $.getJSON(versions.json, updateVersions);
   });
 
   gitbook.events.bind('page.change', function () {
