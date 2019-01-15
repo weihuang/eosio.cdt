@@ -40,6 +40,8 @@ nav.page-toc {
   position:fixed;
   right:66px;
   top: 84px;
+  bottom: 10px;
+  overflow-y: scroll;
   max-width:330px;
 }
 
@@ -51,6 +53,51 @@ nav.page-toc {
     display: none !important;
 }
 
+/* nav */
+
+.book-summary ul.summary > li > a,
+  .book-summary ul.summary li span {
+    padding: 13px 17px;
+}
+
+.book-summary ul.summary > li > ul > li > a,
+  .book-summary ul.summary li span {
+    padding: 9px 17px;
+  }
+
+
+/* LVL 1 */
+.book-summary nav > ul.summary > li > a {
+    text-transform: uppercase;
+    font-size: 9pt;
+    color: #555;
+}
+
+.book-summary nav > ul.summary > li.active > a {
+    color: #000 !important;
+    border:none !important;
+}
+
+/* LVL 2 */
+
+.book-summary nav > ul.summary > li ul > li > a {
+  color:#888;
+  font-size:10pt;
+}
+
+.book-summary nav > ul.summary > li > ul > li.active  > a {
+  color:#000;
+  text-decoration: none;
+  font-weight: bold;
+  border:none !important;
+}
+
+
+.book-summary ul.summary li.active>a {
+    /* color: #008cff; */
+
+}
+
 /* media query here */
 
 @media screen and (max-width: 1800px) {
@@ -59,15 +106,22 @@ nav.page-toc {
   }
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1300px) {
   nav.page-toc {
     position:relative;
     position:static;
     width:100%;
     display:block;
     max-width:none;
-    border-bottom: 1px dotted #c0c0c0;
+    /* border-bottom: 1px dotted #c0c0c0; */
     margin-bottom:20px;
     padding-bottom:20px;
+  }
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-width: 480px){
+  nav.page-toc {
+    display:none !important;
   }
 }
