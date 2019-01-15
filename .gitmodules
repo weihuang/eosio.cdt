@@ -9,6 +9,3 @@
 [submodule "eosio_llvm"]
 	path = eosio_llvm
 	url = https://github.com/eosio/llvm
-[submodule ".docs"]
-	path = .docs
-	url = https://github.com/EOSIO/util-docs-cpp.git
