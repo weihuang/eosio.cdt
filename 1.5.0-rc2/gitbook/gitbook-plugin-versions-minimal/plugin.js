@@ -49,8 +49,12 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 
   gitbook.events.bind('start', function (e, config) {
     conf = config
-    versions = config["versions-minimal"] || {};
-    $.getJSON(versions.json, updateVersions);
+    var vc = config["versions-minimal"] || {};
+    if(vc && vc.json)
+      $.getJSON(vc.json, function(_versions){
+        versions = _versions
+        updateVersions()
+      });
   });
 
   gitbook.events.bind('page.change', function () {
