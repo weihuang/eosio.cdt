@@ -4,14 +4,14 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 
   var current;
   var pluginConfig = {};
+  var versions;
   var conf;
 
   // Update the select with a list of versions
-  function updateVersions(versions) {
+  function updateVersions() {
 
     if(!versions)
       return
-
 
     current = $('.versions-minimal select').val() || current;
 
@@ -25,7 +25,6 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
       'html': '<div><select></select></div>'
     });
     var $select = $li.find('select');
-
 
     $.each(versions.versions, function(i, version) {
       var $option = $('<option>', {
