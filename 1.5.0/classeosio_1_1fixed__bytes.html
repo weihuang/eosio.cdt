@@ -3307,6 +3307,7 @@
                                 
                                 <h1 id="class-eosiofixedbytes">class eosio::fixed_bytes</h1>
 <p><a href="annotated.html"><strong>Class List</strong></a> <strong>&gt;</strong> <a href="namespaceeosio.html"><strong>eosio</strong></a> <strong>::</strong> <a href="classeosio_1_1fixed__bytes.html"><strong>fixed_bytes</strong></a></p>
+<p>Fixed size array of bytes sorted lexicographically. <a href="#detailed-description">More...</a></p>
 <h2 id="classes">Classes</h2>
 <table>
 <thead>
@@ -3337,6 +3338,25 @@
 </tr>
 </tbody>
 </table>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="classeosio_1_1fixed__bytes_a24921307cf46a8f1cc0f3b00fb3be922.md#1a24921307cf46a8f1cc0f3b00fb3be922"><strong>arr_itr</strong></a></td>
+</tr>
+<tr>
+<td>return</td>
+<td><a href="classeosio_1_1fixed__bytes_a2722c1050f9438724c50130ec57a14cc.md#1a2722c1050f9438724c50130ec57a14cc"><strong>arr</strong></a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="public-static-functions">Public Static Functions</h2>
 <table>
 <thead>
@@ -3348,15 +3368,11 @@
 <tbody>
 <tr>
 <td>static constexpr size_t</td>
-<td><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8"><strong>num_words</strong></a> ()</td>
+<td><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8"><strong>num_words</strong></a> () <br>Get number of words contained in this <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object.</td>
 </tr>
 <tr>
 <td>static constexpr size_t</td>
-<td><a href="classeosio_1_1fixed__bytes_aeaa53faaa1a06cbc7693faeb57d3ed9a.md#1aeaa53faaa1a06cbc7693faeb57d3ed9a"><strong>padded_bytes</strong></a> ()</td>
-</tr>
-<tr>
-<td>static <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt;</td>
-<td><a href="classeosio_1_1fixed__bytes_a4443867421d46a4416e105c6290efeee.md#1a4443867421d46a4416e105c6290efeee"><strong>make_from_word_sequence</strong></a> ()</td>
+<td><a href="classeosio_1_1fixed__bytes_aeaa53faaa1a06cbc7693faeb57d3ed9a.md#1aeaa53faaa1a06cbc7693faeb57d3ed9a"><strong>padded_bytes</strong></a> () <br>Get number of padded bytes contained in this <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object.</td>
 </tr>
 </tbody>
 </table>
@@ -3371,39 +3387,15 @@
 <tbody>
 <tr>
 <td>constexpr</td>
-<td><a href="classeosio_1_1fixed__bytes_abb272f4e962fa15dd78633053bb63d31.md#1abb272f4e962fa15dd78633053bb63d31"><strong>fixed_bytes</strong></a> ()</td>
+<td><a href="classeosio_1_1fixed__bytes_abb272f4e962fa15dd78633053bb63d31.md#1abb272f4e962fa15dd78633053bb63d31"><strong>fixed_bytes</strong></a> () <br>Default constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object.</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="classeosio_1_1fixed__bytes_ad2ca84b3f4fcc67b99e6f7731825789d.md#1ad2ca84b3f4fcc67b99e6f7731825789d"><strong>fixed_bytes</strong></a> (const std::array&lt; <strong><a href="classeosio_1_1fixed__bytes_a33cae440afac79b5a925ac1eab43d41b.md#1a33cae440afac79b5a925ac1eab43d41b">word_t</a></strong>, <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words</a></strong>()&gt; &amp; arr)</td>
+<td><a href="classeosio_1_1fixed__bytes_ad2ca84b3f4fcc67b99e6f7731825789d.md#1ad2ca84b3f4fcc67b99e6f7731825789d"><strong>fixed_bytes</strong></a> (const std::array&lt; <strong><a href="classeosio_1_1fixed__bytes_a33cae440afac79b5a925ac1eab43d41b.md#1a33cae440afac79b5a925ac1eab43d41b">word_t</a></strong>, <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words</a></strong>()&gt; &amp; arr) <br>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words()</a></strong> word_t types.</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="classeosio_1_1fixed__bytes_a6d082b4eb4541d6b311849939b5a6ea5.md#1a6d082b4eb4541d6b311849939b5a6ea5"><strong>fixed_bytes</strong></a> (const std::array&lt; Word, NumWords &gt; &amp; arr)</td>
-</tr>
-<tr>
-<td></td>
-<td><a href="classeosio_1_1fixed__bytes_abdc3879046e86eaaf6e867bce216a5fd.md#1abdc3879046e86eaaf6e867bce216a5fd"><strong>fixed_bytes</strong></a> (const Word(&amp;) arr)</td>
-</tr>
-<tr>
-<td>const auto &amp;</td>
-<td><a href="classeosio_1_1fixed__bytes_ad54e7bd5c26dc28c579b3987d3a43def.md#1ad54e7bd5c26dc28c579b3987d3a43def"><strong>get_array</strong></a> () const</td>
-</tr>
-<tr>
-<td>auto</td>
-<td><a href="classeosio_1_1fixed__bytes_a08cee20b3d10e105992a915b35721eb7.md#1a08cee20b3d10e105992a915b35721eb7"><strong>data</strong></a> ()</td>
-</tr>
-<tr>
-<td>auto</td>
-<td><a href="classeosio_1_1fixed__bytes_ac5078b186868eb29ddffe4f4c4e1a5f0.md#1ac5078b186868eb29ddffe4f4c4e1a5f0"><strong>data</strong></a> () const</td>
-</tr>
-<tr>
-<td>auto</td>
-<td><a href="classeosio_1_1fixed__bytes_ac2d8051c8675cda490ae406ca35cdea4.md#1ac2d8051c8675cda490ae406ca35cdea4"><strong>size</strong></a> () const</td>
-</tr>
-<tr>
-<td>std::array&lt; uint8_t, Size &gt;</td>
-<td><a href="classeosio_1_1fixed__bytes_a0ae918fa4de2ed7b20065b133b1e95c9.md#1a0ae918fa4de2ed7b20065b133b1e95c9"><strong>extract_as_byte_array</strong></a> () const</td>
+<td><a href="classeosio_1_1fixed__bytes_ad385c062794d41fae24822bb44bb880e.md#1ad385c062794d41fae24822bb44bb880e"><strong>for</strong></a> (; sub_words_left, 0;-- sub_words_left) <br>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of Word types smaller in size than word_t.</td>
 </tr>
 </tbody>
 </table>
@@ -3418,27 +3410,27 @@
 <tbody>
 <tr>
 <td>friend bool</td>
-<td><a href="classeosio_1_1fixed__bytes_a6c144223829998ed986f74db6ac316de.md#1a6c144223829998ed986f74db6ac316de"><strong>operator==</strong></a></td>
+<td><a href="classeosio_1_1fixed__bytes_a6c144223829998ed986f74db6ac316de.md#1a6c144223829998ed986f74db6ac316de"><strong>operator==</strong></a><br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
 </tr>
 <tr>
 <td>friend bool</td>
-<td><a href="classeosio_1_1fixed__bytes_a33815f0a5b8747b7b61597aad89b8d25.md#1a33815f0a5b8747b7b61597aad89b8d25"><strong>operator !=</strong></a></td>
+<td><a href="classeosio_1_1fixed__bytes_a33815f0a5b8747b7b61597aad89b8d25.md#1a33815f0a5b8747b7b61597aad89b8d25"><strong>operator !=</strong></a><br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
 </tr>
 <tr>
 <td>friend bool</td>
-<td><a href="classeosio_1_1fixed__bytes_ab0af34c1a52a3aa42697d4f77d1e144a.md#1ab0af34c1a52a3aa42697d4f77d1e144a"><strong>operator &gt;</strong></a></td>
+<td><a href="classeosio_1_1fixed__bytes_ab0af34c1a52a3aa42697d4f77d1e144a.md#1ab0af34c1a52a3aa42697d4f77d1e144a"><strong>operator &gt;</strong></a><br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
 </tr>
 <tr>
 <td>friend bool</td>
-<td><a href="classeosio_1_1fixed__bytes_abae9c23b34c63ab070f03b290e117620.md#1abae9c23b34c63ab070f03b290e117620"><strong>operator&lt;</strong></a></td>
+<td><a href="classeosio_1_1fixed__bytes_abae9c23b34c63ab070f03b290e117620.md#1abae9c23b34c63ab070f03b290e117620"><strong>operator&lt;</strong></a><br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
 </tr>
 <tr>
 <td>friend bool</td>
-<td><a href="classeosio_1_1fixed__bytes_a9824b39438c0197e59ff432a7911b0cc.md#1a9824b39438c0197e59ff432a7911b0cc"><strong>operator &gt;=</strong></a></td>
+<td><a href="classeosio_1_1fixed__bytes_a9824b39438c0197e59ff432a7911b0cc.md#1a9824b39438c0197e59ff432a7911b0cc"><strong>operator &gt;=</strong></a><br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
 </tr>
 <tr>
 <td>friend bool</td>
-<td><a href="classeosio_1_1fixed__bytes_a0ab215b30f2c2ccef1384303404e07d8.md#1a0ab215b30f2c2ccef1384303404e07d8"><strong>operator&lt;=</strong></a></td>
+<td><a href="classeosio_1_1fixed__bytes_a0ab215b30f2c2ccef1384303404e07d8.md#1a0ab215b30f2c2ccef1384303404e07d8"><strong>operator&lt;=</strong></a><br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
 </tr>
 </tbody>
 </table>
@@ -3451,90 +3443,49 @@
 <h3 id="typedef-wordt">typedef <a id="1a33cae440afac79b5a925ac1eab43d41b" href="#1a33cae440afac79b5a925ac1eab43d41b">word_t</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">uint128_t</span> eosio::fixed_bytes&lt; Size &gt;::<span class="hljs-keyword">word_t</span>;
 </code></pre>
+<h3 id="variable-arritr">variable <a id="1a24921307cf46a8f1cc0f3b00fb3be922" href="#1a24921307cf46a8f1cc0f3b00fb3be922">arr_itr</a></h3>
+<pre><code class="lang-cpp">eosio::fixed_bytes&lt; Size &gt;::arr_itr;
+</code></pre>
+<h3 id="variable-arr">variable <a id="1a2722c1050f9438724c50130ec57a14cc" href="#1a2722c1050f9438724c50130ec57a14cc">arr</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">return</span> eosio::fixed_bytes&lt; Size &gt;::arr;
+</code></pre>
 <h3 id="function-numwords">function <a id="1a624f3e2c6a33a0197b0d59c6995c47d8" href="#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">size_t</span> eosio::fixed_bytes::num_words ()
 </code></pre>
+<p>Get number of words contained in this <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object. </p>
 <p>Get number of words contained in this <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object. A word is defined to be 16 bytes in size </p>
 <h3 id="function-paddedbytes">function <a id="1aeaa53faaa1a06cbc7693faeb57d3ed9a" href="#1aeaa53faaa1a06cbc7693faeb57d3ed9a">padded_bytes</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">static</span> <span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">size_t</span> eosio::fixed_bytes::padded_bytes ()
 </code></pre>
+<p>Get number of padded bytes contained in this <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object. </p>
 <p>Get number of padded bytes contained in this <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object. Padded bytes are the remaining bytes inside the <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object after all the words are allocated </p>
-<h3 id="function-makefromwordsequence">function <a id="1a4443867421d46a4416e105c6290efeee" href="#1a4443867421d46a4416e105c6290efeee">make_from_word_sequence</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">static</span> fixed_bytes&lt; Size &gt; eosio::fixed_bytes::make_from_word_sequence ()
-</code></pre>
-<p>Create a new <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from a sequence of words
-Create a new <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from a sequence of words </p>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>FirstWord</strong> - The type of the first word in the sequence </li>
-<li><strong>Rest</strong> - The type of the remaining words in the sequence </li>
-</ul>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>first_word</strong> - The first word in the sequence </li>
-<li><strong>rest</strong> - The remaining words in the sequence </li>
-</ul>
-<h3 id="function-fixedbytes-14">function <a id="1abb272f4e962fa15dd78633053bb63d31" href="#1abb272f4e962fa15dd78633053bb63d31">fixed_bytes (1/4)</a></h3>
+<h3 id="function-fixedbytes-12">function <a id="1abb272f4e962fa15dd78633053bb63d31" href="#1abb272f4e962fa15dd78633053bb63d31">fixed_bytes (1/2)</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">constexpr</span> eosio::fixed_bytes::fixed_bytes ()
 </code></pre>
-<p>Default constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object
-Default constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object which initializes all bytes to zero </p>
-<h3 id="function-fixedbytes-24">function <a id="1ad2ca84b3f4fcc67b99e6f7731825789d" href="#1ad2ca84b3f4fcc67b99e6f7731825789d">fixed_bytes (2/4)</a></h3>
+<p>Default constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object. </p>
+<p>Default constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object which initializes all bytes to zero </p>
+<h3 id="function-fixedbytes-22">function <a id="1ad2ca84b3f4fcc67b99e6f7731825789d" href="#1ad2ca84b3f4fcc67b99e6f7731825789d">fixed_bytes (2/2)</a></h3>
 <pre><code class="lang-cpp">eosio::fixed_bytes::fixed_bytes (
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">array</span>&lt; <span class="hljs-keyword">word_t</span>, num_words()&gt; &amp; arr
 )
 </code></pre>
-<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words()</a></strong> word_t types
-Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words()</a></strong> word_t types </p>
+<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words()</a></strong> word_t types. </p>
+<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of <strong><a href="classeosio_1_1fixed__bytes_a624f3e2c6a33a0197b0d59c6995c47d8.md#1a624f3e2c6a33a0197b0d59c6995c47d8">num_words()</a></strong> word_t types </p>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><strong>arr</strong> - data </li>
+<li><strong>arr</strong> data </li>
 </ul>
-<h3 id="function-fixedbytes-34">function <a id="1a6d082b4eb4541d6b311849939b5a6ea5" href="#1a6d082b4eb4541d6b311849939b5a6ea5">fixed_bytes (3/4)</a></h3>
-<pre><code class="lang-cpp">eosio::fixed_bytes::fixed_bytes (
-    <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">array</span>&lt; Word, NumWords &gt; &amp; arr
+<h3 id="function-for">function <a id="1ad385c062794d41fae24822bb44bb880e" href="#1ad385c062794d41fae24822bb44bb880e">for</a></h3>
+<pre><code class="lang-cpp">eosio::fixed_bytes::<span class="hljs-keyword">for</span> (
+    ; sub_words_left,
+    <span class="hljs-number">0</span>;-- sub_words_left
 )
 </code></pre>
-<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of Word types
-Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of Word types </p>
+<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of Word types smaller in size than word_t. </p>
+<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from std::array of Word types smaller in size than word_t </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>arr</strong> - Source data </li>
-</ul>
-<h3 id="function-fixedbytes-44">function <a id="1abdc3879046e86eaaf6e867bce216a5fd" href="#1abdc3879046e86eaaf6e867bce216a5fd">fixed_bytes (4/4)</a></h3>
-<pre><code class="lang-cpp">eosio::fixed_bytes::fixed_bytes (
-    const Word(&amp;) arr
-)
-</code></pre>
-<p>Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from fixed-sized C array of Word types
-Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object from fixed-sized C array of Word types </p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>arr</strong> - Source data </li>
-</ul>
-<h3 id="function-getarray">function <a id="1ad54e7bd5c26dc28c579b3987d3a43def" href="#1ad54e7bd5c26dc28c579b3987d3a43def">get_array</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">auto</span> &amp; eosio::fixed_bytes::get_array () <span class="hljs-keyword">const</span>
-</code></pre>
-<p>Get the contained std::array </p>
-<h3 id="function-data-12">function <a id="1a08cee20b3d10e105992a915b35721eb7" href="#1a08cee20b3d10e105992a915b35721eb7">data (1/2)</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">auto</span> eosio::fixed_bytes::data ()
-</code></pre>
-<p>Get the underlying data of the contained std::array </p>
-<h3 id="function-data-22">function <a id="1ac5078b186868eb29ddffe4f4c4e1a5f0" href="#1ac5078b186868eb29ddffe4f4c4e1a5f0">data (2/2)</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">auto</span> eosio::fixed_bytes::data () <span class="hljs-keyword">const</span>
-</code></pre>
-<p>Get the underlying data of the contained std::array </p>
-<h3 id="function-size">function <a id="1ac2d8051c8675cda490ae406ca35cdea4" href="#1ac2d8051c8675cda490ae406ca35cdea4">size</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">auto</span> eosio::fixed_bytes::size () <span class="hljs-keyword">const</span>
-</code></pre>
-<p>Get the size of the contained std::array </p>
-<h3 id="function-extractasbytearray">function <a id="1a0ae918fa4de2ed7b20065b133b1e95c9" href="#1a0ae918fa4de2ed7b20065b133b1e95c9">extract_as_byte_array</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-built_in">std</span>::<span class="hljs-built_in">array</span>&lt; <span class="hljs-keyword">uint8_t</span>, Size &gt; eosio::fixed_bytes::extract_as_byte_array () <span class="hljs-keyword">const</span>
-</code></pre>
-<p>Extract the contained data as an array of bytes </p>
-<p><strong>Returns:</strong></p>
-<ul>
-<li>the extracted data as array of bytes </li>
 </ul>
 <h3 id="friend-operator">friend <a id="1a6c144223829998ed986f74db6ac316de" href="#1a6c144223829998ed986f74db6ac316de">operator==</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">friend</span> <span class="hljs-keyword">bool</span> eosio::fixed_bytes::<span class="hljs-keyword">operator</span>== (
@@ -3542,8 +3493,8 @@ Constructor to <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a>
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
 )
 </code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2
-Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
@@ -3557,8 +3508,8 @@ Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html"
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
 )
 </code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2
-Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
@@ -3572,8 +3523,8 @@ Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html"
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
 )
 </code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2
-Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
@@ -3587,8 +3538,8 @@ Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html"
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
 )
 </code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2
-Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
@@ -3602,8 +3553,8 @@ Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html"
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
 )
 </code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2
-Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
@@ -3617,8 +3568,8 @@ Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html"
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
 )
 </code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2
-Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
@@ -3671,7 +3622,7 @@ Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html"
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"search":{"keywords":["eosio::fixed_bytes","bool_pack","word_t","num_words","padded_bytes","make_from_word_sequence","fixed_bytes","fixed_bytes","fixed_bytes","fixed_bytes","get_array","data","data","size","extract_as_byte_array","operator==","operator !=","operator >","operator<","operator >=","operator<="]},"title":"class fixed_bytes","level":"1.5.5.5.16","depth":4,"next":{"title":"struct bool_pack","level":"1.5.5.5.16.1","depth":5,"path":"structeosio_1_1fixed__bytes_1_1bool__pack.md","ref":"structeosio_1_1fixed__bytes_1_1bool__pack.md","articles":[]},"previous":{"title":"class extended_symbol","level":"1.5.5.5.15","depth":4,"path":"classeosio_1_1extended__symbol.md","ref":"classeosio_1_1extended__symbol.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","custom-header-next@git+https://github.com/dskvr/gitbook-plugin-custom-header-next.git","versions-minimal@git+https://github.com/dskvr/gitbook-plugin-versions-minimal.git","favicon","toggle-chapters","nocache"],"pluginsConfig":{"nocache":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-minimal":{"type":"branches","json":"/eosio.cdt/versions.json"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico"},"custom-header-next":{"logo":"/eosio.cdt/images/logo.png","logo_alt":"EOSIO","base_path":"/eosio.cdt","text":"eosio.cdt","navigations":[{"title":"Developers Portal","link":"http://developers.eos.io","id":"back-to-portal"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"classeosio_1_1fixed__bytes.md","mtime":"2019-01-25T02:18:50.494Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-25T02:18:59.387Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["eosio::fixed_bytes","bool_pack","word_t","arr_itr","arr","num_words","padded_bytes","fixed_bytes","fixed_bytes","for","operator==","operator !=","operator >","operator<","operator >=","operator<="]},"title":"class fixed_bytes","level":"1.5.5.5.16","depth":4,"next":{"title":"struct bool_pack","level":"1.5.5.5.16.1","depth":5,"path":"structeosio_1_1fixed__bytes_1_1bool__pack.md","ref":"structeosio_1_1fixed__bytes_1_1bool__pack.md","articles":[]},"previous":{"title":"class extended_symbol","level":"1.5.5.5.15","depth":4,"path":"classeosio_1_1extended__symbol.md","ref":"classeosio_1_1extended__symbol.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","custom-header-next@git+https://github.com/dskvr/gitbook-plugin-custom-header-next.git","versions-minimal@git+https://github.com/dskvr/gitbook-plugin-versions-minimal.git","favicon","toggle-chapters","nocache"],"pluginsConfig":{"nocache":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-minimal":{"type":"branches","json":"/eosio.cdt/versions.json"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico"},"custom-header-next":{"logo":"/eosio.cdt/images/logo.png","logo_alt":"EOSIO","base_path":"/eosio.cdt","text":"eosio.cdt","navigations":[{"title":"Developers Portal","link":"http://developers.eos.io","id":"back-to-portal"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"classeosio_1_1fixed__bytes.md","mtime":"2019-01-28T16:33:00.515Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-28T16:33:08.522Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -92,12 +92,10 @@ nav.page-toc {
   border:none !important;
 }
 
-
 .book-summary ul.summary li.active>a {
     /* color: #008cff; */
 
 }
-
 /* media query here */
 
 @media screen and (max-width: 1800px) {
@@ -106,7 +104,7 @@ nav.page-toc {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1600px) {
   nav.page-toc {
     position:relative;
     position:static;
