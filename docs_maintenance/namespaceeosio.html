@@ -3819,20 +3819,20 @@
 <td><a href="group__transaction_gad28a3e0d3a3eef98325a97e9633d9806.md#gad28a3e0d3a3eef98325a97e9633d9806"><strong>extensions_type</strong></a></td>
 </tr>
 <tr>
+<td>typedef <strong><a href="classeosio_1_1block__timestamp.html">block_timestamp</a></strong></td>
+<td><a href="group__time_ga4f8fa835ef0dc341addb6e51d0d840b3.md#ga4f8fa835ef0dc341addb6e51d0d840b3"><strong>block_timestamp_type</strong></a></td>
+</tr>
+<tr>
 <td>typedef <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; 20 &gt;</td>
-<td><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0"><strong>checksum160</strong></a></td>
+<td><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12"><strong>checksum160</strong></a></td>
 </tr>
 <tr>
 <td>typedef <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; 32 &gt;</td>
-<td><a href="namespaceeosio_a3e6c9320b8fad56e0a1360a97557b14f.md#1a3e6c9320b8fad56e0a1360a97557b14f"><strong>checksum256</strong></a></td>
+<td><a href="namespaceeosio_a47fd92719089a8609af81ee41ba33e78.md#1a47fd92719089a8609af81ee41ba33e78"><strong>checksum256</strong></a></td>
 </tr>
 <tr>
 <td>typedef <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; 64 &gt;</td>
-<td><a href="namespaceeosio_a7dd289e6fc78425b71fcc53e1d79aaf4.md#1a7dd289e6fc78425b71fcc53e1d79aaf4"><strong>checksum512</strong></a></td>
-</tr>
-<tr>
-<td>typedef <strong><a href="classeosio_1_1block__timestamp.html">block_timestamp</a></strong></td>
-<td><a href="group__time_ga4f8fa835ef0dc341addb6e51d0d840b3.md#ga4f8fa835ef0dc341addb6e51d0d840b3"><strong>block_timestamp_type</strong></a></td>
+<td><a href="namespaceeosio_a7ca4ba60abf3feea88247e16875d66a2.md#1a7ca4ba60abf3feea88247e16875d66a2"><strong>checksum512</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -3918,10 +3918,6 @@
 <tr>
 <td>uint32_t</td>
 <td><a href="namespaceeosio_a602640a08f02a893cab6b28016866ec0.md#1a602640a08f02a893cab6b28016866ec0"><strong>action_data_size</strong></a> () <br>Get the length of current action&apos;s data field.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><a href="namespaceeosio_a78b2709044b48bb39105d37d787fefea.md#1a78b2709044b48bb39105d37d787fefea"><strong>dispatch</strong></a> (uint64_t code, uint64_t act)</td>
 </tr>
 <tr>
 <td>bool</td>
@@ -4036,14 +4032,6 @@
 <td><a href="group__transaction_ga0a8affaada54b4a722e819c9da056211.md#ga0a8affaada54b4a722e819c9da056211"><strong>get_context_free_data</strong></a> (uint32_t index, char * buff, size_t size)</td>
 </tr>
 <tr>
-<td>DataStream &amp;</td>
-<td><a href="group__binary__extension_gafac770cd7ff94378b143ba2c3bb27409.md#gafac770cd7ff94378b143ba2c3bb27409"><strong>operator&lt;&lt;</strong></a> (DataStream &amp; ds, const <strong><a href="classeosio_1_1binary__extension.html">eosio::binary_extension</a></strong>&lt; T &gt; &amp; be) <br>Serialize a <strong><a href="classeosio_1_1binary__extension.html">binary_extension</a></strong>.</td>
-</tr>
-<tr>
-<td>DataStream &amp;</td>
-<td><a href="group__binary__extension_gad82190406cf614207f43c707cc59e034.md#gad82190406cf614207f43c707cc59e034"><strong>operator&gt;&gt;</strong></a> (DataStream &amp; ds, <strong><a href="classeosio_1_1binary__extension.html">eosio::binary_extension</a></strong>&lt; T &gt; &amp; be) <br>Deserialize a <strong><a href="classeosio_1_1binary__extension.html">binary_extension</a></strong>.</td>
-</tr>
-<tr>
 <td>void</td>
 <td><a href="group__system_ga919983993e7c2b18dcb253e3a8ef33e4.md#ga919983993e7c2b18dcb253e3a8ef33e4"><strong>check</strong></a> (bool pred, const char * msg) <br>Assert if the predicate fails and use the supplied message.</td>
 </tr>
@@ -4068,60 +4056,44 @@
 <td><a href="group__system_ga2f6537af230517a619f07727f6ff33a5.md#ga2f6537af230517a619f07727f6ff33a5"><strong>check</strong></a> (bool pred, uint64_t code) <br>Assert if the predicate fails and use the supplied error code.</td>
 </tr>
 <tr>
-<td>DataStream &amp;</td>
-<td><a href="group__publickeytype_gac08677e757052b50568673f71095b319.md#gac08677e757052b50568673f71095b319"><strong>operator&lt;&lt;</strong></a> (DataStream &amp; ds, const <strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong> &amp; pubkey)</td>
-</tr>
-<tr>
-<td>DataStream &amp;</td>
-<td><a href="group__publickeytype_ga1f2fb9b4197dd1a707853bb983286b57.md#ga1f2fb9b4197dd1a707853bb983286b57"><strong>operator&gt;&gt;</strong></a> (DataStream &amp; ds, <strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong> &amp; pubkey)</td>
-</tr>
-<tr>
-<td>DataStream &amp;</td>
-<td><a href="group__signature_ga428593cbd75f3c397b0f722d0fee0971.md#ga428593cbd75f3c397b0f722d0fee0971"><strong>operator&lt;&lt;</strong></a> (DataStream &amp; ds, const <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> &amp; sig)</td>
-</tr>
-<tr>
-<td>DataStream &amp;</td>
-<td><a href="group__signature_ga3b24f6cdc071d531664cbca7cae5bbbf.md#ga3b24f6cdc071d531664cbca7cae5bbbf"><strong>operator&gt;&gt;</strong></a> (DataStream &amp; ds, <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> &amp; sig)</td>
+<td>void</td>
+<td><a href="group__crypto_ga1cdf6624436a970b5654fbfb0d8f582c.md#ga1cdf6624436a970b5654fbfb0d8f582c"><strong>assert_sha256</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_a47fd92719089a8609af81ee41ba33e78.md#1a47fd92719089a8609af81ee41ba33e78">eosio::checksum256</a></strong> &amp; hash) <br>Tests if the sha256 hash generated from data matches the provided digest.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><a href="group__crypto_ga1cdf6624436a970b5654fbfb0d8f582c.md#ga1cdf6624436a970b5654fbfb0d8f582c"><strong>assert_sha256</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_a3e6c9320b8fad56e0a1360a97557b14f.md#1a3e6c9320b8fad56e0a1360a97557b14f">eosio::checksum256</a></strong> &amp; hash) <br>Tests if the sha256 hash generated from data matches the provided digest.</td>
+<td><a href="group__crypto_ga90c6c078f3ac4bfa9eb432ae798469e9.md#ga90c6c078f3ac4bfa9eb432ae798469e9"><strong>assert_sha1</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12">eosio::checksum160</a></strong> &amp; hash) <br>Tests if the sha1 hash generated from data matches the provided digest.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><a href="group__crypto_ga90c6c078f3ac4bfa9eb432ae798469e9.md#ga90c6c078f3ac4bfa9eb432ae798469e9"><strong>assert_sha1</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0">eosio::checksum160</a></strong> &amp; hash) <br>Tests if the sha1 hash generated from data matches the provided digest.</td>
+<td><a href="group__crypto_ga8de30adbe757f02392aa0403a484e4db.md#ga8de30adbe757f02392aa0403a484e4db"><strong>assert_sha512</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_a7ca4ba60abf3feea88247e16875d66a2.md#1a7ca4ba60abf3feea88247e16875d66a2">eosio::checksum512</a></strong> &amp; hash) <br>Tests if the sha512 hash generated from data matches the provided digest.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><a href="group__crypto_ga8de30adbe757f02392aa0403a484e4db.md#ga8de30adbe757f02392aa0403a484e4db"><strong>assert_sha512</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_a7dd289e6fc78425b71fcc53e1d79aaf4.md#1a7dd289e6fc78425b71fcc53e1d79aaf4">eosio::checksum512</a></strong> &amp; hash) <br>Tests if the sha512 hash generated from data matches the provided digest.</td>
+<td><a href="group__crypto_gaea728bf2ff323abf5cbe80e16c3bc6aa.md#gaea728bf2ff323abf5cbe80e16c3bc6aa"><strong>assert_ripemd160</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12">eosio::checksum160</a></strong> &amp; hash) <br>Tests if the ripemd160 hash generated from data matches the provided digest.</td>
 </tr>
 <tr>
-<td>void</td>
-<td><a href="group__crypto_gaea728bf2ff323abf5cbe80e16c3bc6aa.md#gaea728bf2ff323abf5cbe80e16c3bc6aa"><strong>assert_ripemd160</strong></a> (const char * data, uint32_t length, const <strong><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0">eosio::checksum160</a></strong> &amp; hash) <br>Tests if the ripemd160 hash generated from data matches the provided digest.</td>
-</tr>
-<tr>
-<td><strong><a href="namespaceeosio_a3e6c9320b8fad56e0a1360a97557b14f.md#1a3e6c9320b8fad56e0a1360a97557b14f">eosio::checksum256</a></strong></td>
+<td><strong><a href="namespaceeosio_a47fd92719089a8609af81ee41ba33e78.md#1a47fd92719089a8609af81ee41ba33e78">eosio::checksum256</a></strong></td>
 <td><a href="group__crypto_gaaf2942e743ae159b9b308d63f5e3dd07.md#gaaf2942e743ae159b9b308d63f5e3dd07"><strong>sha256</strong></a> (const char * data, uint32_t length) <br>Hashes <code>data</code> using SHA256.</td>
 </tr>
 <tr>
-<td><strong><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0">eosio::checksum160</a></strong></td>
+<td><strong><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12">eosio::checksum160</a></strong></td>
 <td><a href="group__crypto_gac047d4c44fd23b04968068324b7782d3.md#gac047d4c44fd23b04968068324b7782d3"><strong>sha1</strong></a> (const char * data, uint32_t length) <br>Hashes <code>data</code> using SHA1.</td>
 </tr>
 <tr>
-<td><strong><a href="namespaceeosio_a7dd289e6fc78425b71fcc53e1d79aaf4.md#1a7dd289e6fc78425b71fcc53e1d79aaf4">eosio::checksum512</a></strong></td>
+<td><strong><a href="namespaceeosio_a7ca4ba60abf3feea88247e16875d66a2.md#1a7ca4ba60abf3feea88247e16875d66a2">eosio::checksum512</a></strong></td>
 <td><a href="group__crypto_gabc4f1a4a272cf6e9775c594ff4a49718.md#gabc4f1a4a272cf6e9775c594ff4a49718"><strong>sha512</strong></a> (const char * data, uint32_t length) <br>Hashes <code>data</code> using SHA512.</td>
 </tr>
 <tr>
-<td><strong><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0">eosio::checksum160</a></strong></td>
+<td><strong><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12">eosio::checksum160</a></strong></td>
 <td><a href="group__crypto_ga164472cf2c5ea4bca73052eb520300f1.md#ga164472cf2c5ea4bca73052eb520300f1"><strong>ripemd160</strong></a> (const char * data, uint32_t length) <br>Hashes <code>data</code> using RIPEMD160.</td>
 </tr>
 <tr>
 <td><strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong></td>
-<td><a href="group__crypto_gaa1886ce30afee044bf8ee7ebf8eda72a.md#gaa1886ce30afee044bf8ee7ebf8eda72a"><strong>recover_key</strong></a> (const <strong><a href="namespaceeosio_a3e6c9320b8fad56e0a1360a97557b14f.md#1a3e6c9320b8fad56e0a1360a97557b14f">eosio::checksum256</a></strong> &amp; digest, const <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> &amp; sig) <br>Calculates the public key used for a given signature on a given digest.</td>
+<td><a href="group__crypto_gaa1886ce30afee044bf8ee7ebf8eda72a.md#gaa1886ce30afee044bf8ee7ebf8eda72a"><strong>recover_key</strong></a> (const <strong><a href="namespaceeosio_a47fd92719089a8609af81ee41ba33e78.md#1a47fd92719089a8609af81ee41ba33e78">eosio::checksum256</a></strong> &amp; digest, const <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> &amp; sig) <br>Calculates the public key used for a given signature on a given digest.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><a href="group__crypto_ga678968c3609fe3135bf43fae12ab0f01.md#ga678968c3609fe3135bf43fae12ab0f01"><strong>assert_recover_key</strong></a> (const <strong><a href="namespaceeosio_a3e6c9320b8fad56e0a1360a97557b14f.md#1a3e6c9320b8fad56e0a1360a97557b14f">eosio::checksum256</a></strong> &amp; digest, const <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> &amp; sig, const <strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong> &amp; pubkey) <br>Tests a given public key with the recovered public key from digest and signature.</td>
+<td><a href="group__crypto_ga678968c3609fe3135bf43fae12ab0f01.md#ga678968c3609fe3135bf43fae12ab0f01"><strong>assert_recover_key</strong></a> (const <strong><a href="namespaceeosio_a47fd92719089a8609af81ee41ba33e78.md#1a47fd92719089a8609af81ee41ba33e78">eosio::checksum256</a></strong> &amp; digest, const <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> &amp; sig, const <strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong> &amp; pubkey) <br>Tests a given public key with the recovered public key from digest and signature.</td>
 </tr>
 <tr>
 <td><strong><a href="classeosio_1_1datastream.html">datastream</a></strong>&lt; Stream &gt; &amp;</td>
@@ -4268,38 +4240,6 @@
 <td><a href="group__datastream_ga13b3cd80e2641c0408f247c550e3d667.md#ga13b3cd80e2641c0408f247c550e3d667"><strong>pack</strong></a> (const T &amp; value) <br>Get packed data.</td>
 </tr>
 <tr>
-<td>bool</td>
-<td><a href="group__fixed__bytes_ga82eb12fa571ac6fa491f1620a0b341ff.md#ga82eb12fa571ac6fa491f1620a0b341ff"><strong>operator==</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><a href="group__fixed__bytes_ga358a5fa3444d6ec9396d223364647ac8.md#ga358a5fa3444d6ec9396d223364647ac8"><strong>operator!=</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><a href="group__fixed__bytes_ga69a98da44d9f8a04c4601586266c6f77.md#ga69a98da44d9f8a04c4601586266c6f77"><strong>operator&gt;</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><a href="group__fixed__bytes_gad1204d2a89b55f59e178b5228ced86c3.md#gad1204d2a89b55f59e178b5228ced86c3"><strong>operator&lt;</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><a href="group__fixed__bytes_ga60e3b9c6ab8386dfb90d4853fd6414fc.md#ga60e3b9c6ab8386dfb90d4853fd6414fc"><strong>operator&gt;=</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
-</tr>
-<tr>
-<td>bool</td>
-<td><a href="group__fixed__bytes_ga11b16d988552ea793dcf59543e85e1a7.md#ga11b16d988552ea793dcf59543e85e1a7"><strong>operator&lt;=</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
-</tr>
-<tr>
-<td>DataStream &amp;</td>
-<td><a href="namespaceeosio_a8ba60976b20ebc72d2dcaf088dc954ca.md#1a8ba60976b20ebc72d2dcaf088dc954ca"><strong>operator&lt;&lt;</strong></a> (DataStream &amp; ds, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; d) <br>Serialize a <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>.</td>
-</tr>
-<tr>
-<td>DataStream &amp;</td>
-<td><a href="namespaceeosio_a2f51d9a50e9e3d5e714975520d0bc265.md#1a2f51d9a50e9e3d5e714975520d0bc265"><strong>operator&gt;&gt;</strong></a> (DataStream &amp; ds, <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; d) <br>Deserialize a <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>.</td>
-</tr>
-<tr>
 <td>DataStream &amp;</td>
 <td><a href="namespaceeosio_a3fdefcc62e5d9691425078f03608ce59.md#1a3fdefcc62e5d9691425078f03608ce59"><strong>operator&lt;&lt;</strong></a> (DataStream &amp; ds, const ::<strong><a href="structeosio_1_1ignore__wrapper.html">eosio::ignore_wrapper</a></strong>&lt; T &gt; &amp; val) <br>Serialize ignored_wrapper<t>&apos;s T value.</t></td>
 </tr>
@@ -4354,10 +4294,6 @@
 <tr>
 <td>void</td>
 <td><a href="group__console_gab5232cf7452d463948eac1179f31d9f0.md#gab5232cf7452d463948eac1179f31d9f0"><strong>print</strong></a> (Arg &amp;&amp; a, Args &amp;&amp;... args)</td>
-</tr>
-<tr>
-<td><strong><a href="classeosio_1_1iostream.html">iostream</a></strong> &amp;</td>
-<td><a href="group__console_ga0374bf9eee164d4426a0be87f8e7b814.md#ga0374bf9eee164d4426a0be87f8e7b814"><strong>operator&lt;&lt;</strong></a> (<strong><a href="classeosio_1_1iostream.html">iostream</a></strong> &amp; out, const T &amp; v)</td>
 </tr>
 <tr>
 <td></td>
@@ -4493,6 +4429,34 @@
 </tr>
 <tr>
 <td>bool</td>
+<td><a href="namespaceeosio_a78b2709044b48bb39105d37d787fefea.md#1a78b2709044b48bb39105d37d787fefea"><strong>dispatch</strong></a> (uint64_t code, uint64_t act)</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><a href="group__fixed__bytes_ga82eb12fa571ac6fa491f1620a0b341ff.md#ga82eb12fa571ac6fa491f1620a0b341ff"><strong>operator==</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><a href="group__fixed__bytes_ga358a5fa3444d6ec9396d223364647ac8.md#ga358a5fa3444d6ec9396d223364647ac8"><strong>operator!=</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><a href="group__fixed__bytes_ga69a98da44d9f8a04c4601586266c6f77.md#ga69a98da44d9f8a04c4601586266c6f77"><strong>operator&gt;</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><a href="group__fixed__bytes_gad1204d2a89b55f59e178b5228ced86c3.md#gad1204d2a89b55f59e178b5228ced86c3"><strong>operator&lt;</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><a href="group__fixed__bytes_ga60e3b9c6ab8386dfb90d4853fd6414fc.md#ga60e3b9c6ab8386dfb90d4853fd6414fc"><strong>operator&gt;=</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><a href="group__fixed__bytes_ga11b16d988552ea793dcf59543e85e1a7.md#ga11b16d988552ea793dcf59543e85e1a7"><strong>operator&lt;=</strong></a> (const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c1, const <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>&lt; Size &gt; &amp; c2) <br>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2.</td>
+</tr>
+<tr>
+<td>bool</td>
 <td><a href="group__permission_ga2ded7b51e4363cd7634070612add2e99.md#ga2ded7b51e4363cd7634070612add2e99"><strong>check_permission_authorization</strong></a> (<strong><a href="structeosio_1_1name.html">name</a></strong> account, <strong><a href="structeosio_1_1name.html">name</a></strong> permission, const std::set&lt; <strong><a href="structeosio_1_1public__key.html">public_key</a></strong> &gt; &amp; provided_keys, const std::set&lt; <strong><a href="structeosio_1_1permission__level.html">permission_level</a></strong> &gt; &amp; provided_permissions = std::set&lt; <strong><a href="structeosio_1_1permission__level.html">permission_level</a></strong> &gt;(), uint64_t provided_delay_us = static_cast&lt; uint64_t &gt;(std::numeric_limits&lt; int64_t &gt;::max()))</td>
 </tr>
 <tr>
@@ -4511,6 +4475,10 @@
 <td>void</td>
 <td><a href="group__console_gaeb64d709bf057338af83ea1b95a0d16d.md#gaeb64d709bf057338af83ea1b95a0d16d"><strong>print</strong></a> (<strong><a href="classeosio_1_1symbol__code.html">eosio::symbol_code</a></strong> sym_code)</td>
 </tr>
+<tr>
+<td><strong><a href="classeosio_1_1iostream.html">iostream</a></strong> &amp;</td>
+<td><a href="group__console_ga827f0aac6315e7963bcd52656cd7eeed.md#ga827f0aac6315e7963bcd52656cd7eeed"><strong>operator&lt;&lt;</strong></a> (<strong><a href="classeosio_1_1iostream.html">iostream</a></strong> &amp; out, const T &amp; v)</td>
+</tr>
 </tbody>
 </table>
 <h2 id="typedefs-documentation">Typedefs Documentation</h2>
@@ -4520,17 +4488,17 @@
 <h3 id="typedef-extensionstype">typedef <a id="gad28a3e0d3a3eef98325a97e9633d9806" href="#gad28a3e0d3a3eef98325a97e9633d9806">extensions_type</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; extension &gt; eosio::extensions_type;
 </code></pre>
-<h3 id="typedef-checksum160">typedef <a id="1ac4333f7130bbcf42a6b9907900812dd0" href="#1ac4333f7130bbcf42a6b9907900812dd0">checksum160</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> fixed_bytes&lt; <span class="hljs-number">20</span> &gt; eosio::checksum160;
-</code></pre>
-<h3 id="typedef-checksum256">typedef <a id="1a3e6c9320b8fad56e0a1360a97557b14f" href="#1a3e6c9320b8fad56e0a1360a97557b14f">checksum256</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> fixed_bytes&lt; <span class="hljs-number">32</span> &gt; eosio::checksum256;
-</code></pre>
-<h3 id="typedef-checksum512">typedef <a id="1a7dd289e6fc78425b71fcc53e1d79aaf4" href="#1a7dd289e6fc78425b71fcc53e1d79aaf4">checksum512</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> fixed_bytes&lt; <span class="hljs-number">64</span> &gt; eosio::checksum512;
-</code></pre>
 <h3 id="typedef-blocktimestamptype">typedef <a id="ga4f8fa835ef0dc341addb6e51d0d840b3" href="#ga4f8fa835ef0dc341addb6e51d0d840b3">block_timestamp_type</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">typedef</span> block_timestamp eosio::block_timestamp_type;
+</code></pre>
+<h3 id="typedef-checksum160">typedef <a id="1a876f09efda2bbea70d86a6b00b7b6a12" href="#1a876f09efda2bbea70d86a6b00b7b6a12">checksum160</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">using</span> eosio::checksum160 = <span class="hljs-keyword">typedef</span> fixed_bytes&lt;<span class="hljs-number">20</span>&gt;;
+</code></pre>
+<h3 id="typedef-checksum256">typedef <a id="1a47fd92719089a8609af81ee41ba33e78" href="#1a47fd92719089a8609af81ee41ba33e78">checksum256</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">using</span> eosio::checksum256 = <span class="hljs-keyword">typedef</span> fixed_bytes&lt;<span class="hljs-number">32</span>&gt;;
+</code></pre>
+<h3 id="typedef-checksum512">typedef <a id="1a7ca4ba60abf3feea88247e16875d66a2" href="#1a7ca4ba60abf3feea88247e16875d66a2">checksum512</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">using</span> eosio::checksum512 = <span class="hljs-keyword">typedef</span> fixed_bytes&lt;<span class="hljs-number">64</span>&gt;;
 </code></pre>
 <h2 id="variables-documentation">Variables Documentation</h2>
 <h3 id="variable-samepayer-22">variable <a id="1a8afb93d00970c42ecd4c8cf2ff458c4c" href="#1a8afb93d00970c42ecd4c8cf2ff458c4c">same_payer (2/2)</a></h3>
@@ -4684,13 +4652,7 @@ This helper method enables you to add multiple accounts to accounts to be notifi
 <p>Get the length of the current action&apos;s data field. This method is useful for dynamically sized actions</p>
 <p><strong>Returns:</strong></p>
 <p>the length of the current action&apos;s data field </p>
-<h3 id="function-dispatch-12">function <a id="1a78b2709044b48bb39105d37d787fefea" href="#1a78b2709044b48bb39105d37d787fefea">dispatch (1/2)</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::dispatch (
-    <span class="hljs-keyword">uint64_t</span> code,
-    <span class="hljs-keyword">uint64_t</span> act
-)
-</code></pre>
-<h3 id="function-dispatch-22">function <a id="ga289285490058d17de4a6a052b52dd680" href="#ga289285490058d17de4a6a052b52dd680">dispatch (2/2)</a></h3>
+<h3 id="function-dispatch-12">function <a id="ga289285490058d17de4a6a052b52dd680" href="#ga289285490058d17de4a6a052b52dd680">dispatch (1/2)</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::dispatch (
     <span class="hljs-keyword">uint64_t</span> code,
     <span class="hljs-keyword">uint64_t</span> act
@@ -5064,44 +5026,6 @@ cancel_deferred( id );
 </ul>
 <p><strong>Returns:</strong></p>
 <p>size copied, or context_free_data[index].<strong><a href="namespaceeosio_1_1internal__use__do__not__use_a40f68c0fdc4874d206da23b1feccba91.md#1a40f68c0fdc4874d206da23b1feccba91">size()</a></strong> if 0 passed for size, or -1 if index not valid </p>
-<h3 id="function-operator">function <a id="gafac770cd7ff94378b143ba2c3bb27409" href="#gafac770cd7ff94378b143ba2c3bb27409">operator&lt;&lt;</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
-    DataStream &amp; ds,
-    <span class="hljs-keyword">const</span> eosio::binary_extension&lt; T &gt; &amp; be
-)
-</code></pre>
-<p>Serialize a <strong><a href="classeosio_1_1binary__extension.html">binary_extension</a></strong>. </p>
-<p>Serialize a <strong><a href="classeosio_1_1binary__extension.html">binary_extension</a></strong> into a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to write </li>
-<li><strong>opt</strong> - The value to serialize </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator">function <a id="gad82190406cf614207f43c707cc59e034" href="#gad82190406cf614207f43c707cc59e034">operator&gt;&gt;</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
-    DataStream &amp; ds,
-    eosio::binary_extension&lt; T &gt; &amp; be
-)
-</code></pre>
-<p>Deserialize a <strong><a href="classeosio_1_1binary__extension.html">binary_extension</a></strong>. </p>
-<p>Deserialize a <strong><a href="classeosio_1_1binary__extension.html">binary_extension</a></strong> from a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to read </li>
-<li><strong>opt</strong> - The destination for deserialized value </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
 <h3 id="function-check-16">function <a id="ga919983993e7c2b18dcb253e3a8ef33e4" href="#ga919983993e7c2b18dcb253e3a8ef33e4">check (1/6)</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">void</span> eosio::check (
     <span class="hljs-keyword">bool</span> pred,
@@ -5192,78 +5116,6 @@ Example: </p>
 <p>Example:</p>
 <pre><code class="lang-cpp">eosio::check(a == b, <span class="hljs-number">13</span>);
 </code></pre>
-<h3 id="function-operator">function <a id="gac08677e757052b50568673f71095b319" href="#gac08677e757052b50568673f71095b319">operator&lt;&lt;</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
-    DataStream &amp; ds,
-    <span class="hljs-keyword">const</span> eosio::public_key &amp; pubkey
-)
-</code></pre>
-<p>Serialize an <strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong> into a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to write </li>
-<li><strong>pubkey</strong> - The value to serialize </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator">function <a id="ga1f2fb9b4197dd1a707853bb983286b57" href="#ga1f2fb9b4197dd1a707853bb983286b57">operator&gt;&gt;</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
-    DataStream &amp; ds,
-    eosio::public_key &amp; pubkey
-)
-</code></pre>
-<p>Deserialize an <strong><a href="structeosio_1_1public__key.html">eosio::public_key</a></strong> from a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to read </li>
-<li><strong>pubkey</strong> - The destination for deserialized value </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator">function <a id="ga428593cbd75f3c397b0f722d0fee0971" href="#ga428593cbd75f3c397b0f722d0fee0971">operator&lt;&lt;</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
-    DataStream &amp; ds,
-    <span class="hljs-keyword">const</span> eosio::signature &amp; sig
-)
-</code></pre>
-<p>Serialize an <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> into a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to write </li>
-<li><strong>sig</strong> - The value to serialize </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator">function <a id="ga3b24f6cdc071d531664cbca7cae5bbbf" href="#ga3b24f6cdc071d531664cbca7cae5bbbf">operator&gt;&gt;</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
-    DataStream &amp; ds,
-    eosio::signature &amp; sig
-)
-</code></pre>
-<p>Deserialize an <strong><a href="structeosio_1_1signature.html">eosio::signature</a></strong> from a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to read </li>
-<li><strong>sig</strong> - The destination for deserialized value </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
 <h3 id="function-assertsha256">function <a id="ga1cdf6624436a970b5654fbfb0d8f582c" href="#ga1cdf6624436a970b5654fbfb0d8f582c">assert_sha256</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">void</span> eosio::assert_sha256 (
     <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * data,
@@ -5365,7 +5217,7 @@ Example: </p>
 <li><strong>length</strong> - Data length </li>
 </ul>
 <p><strong>Returns:</strong></p>
-<p><strong><a href="namespaceeosio_a3e6c9320b8fad56e0a1360a97557b14f.md#1a3e6c9320b8fad56e0a1360a97557b14f">eosio::checksum256</a></strong> - Computed digest </p>
+<p><strong><a href="namespaceeosio_a47fd92719089a8609af81ee41ba33e78.md#1a47fd92719089a8609af81ee41ba33e78">eosio::checksum256</a></strong> - Computed digest </p>
 <h3 id="function-sha1">function <a id="gac047d4c44fd23b04968068324b7782d3" href="#gac047d4c44fd23b04968068324b7782d3">sha1</a></h3>
 <pre><code class="lang-cpp">eosio::checksum160 eosio::sha1 (
     <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * data,
@@ -5380,7 +5232,7 @@ Example: </p>
 <li><strong>length</strong> - Data length </li>
 </ul>
 <p><strong>Returns:</strong></p>
-<p><strong><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0">eosio::checksum160</a></strong> - Computed digest </p>
+<p><strong><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12">eosio::checksum160</a></strong> - Computed digest </p>
 <h3 id="function-sha512">function <a id="gabc4f1a4a272cf6e9775c594ff4a49718" href="#gabc4f1a4a272cf6e9775c594ff4a49718">sha512</a></h3>
 <pre><code class="lang-cpp">eosio::checksum512 eosio::sha512 (
     <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * data,
@@ -5395,7 +5247,7 @@ Example: </p>
 <li><strong>length</strong> - Data length </li>
 </ul>
 <p><strong>Returns:</strong></p>
-<p><strong><a href="namespaceeosio_a7dd289e6fc78425b71fcc53e1d79aaf4.md#1a7dd289e6fc78425b71fcc53e1d79aaf4">eosio::checksum512</a></strong> - Computed digest </p>
+<p><strong><a href="namespaceeosio_a7ca4ba60abf3feea88247e16875d66a2.md#1a7ca4ba60abf3feea88247e16875d66a2">eosio::checksum512</a></strong> - Computed digest </p>
 <h3 id="function-ripemd160">function <a id="ga164472cf2c5ea4bca73052eb520300f1" href="#ga164472cf2c5ea4bca73052eb520300f1">ripemd160</a></h3>
 <pre><code class="lang-cpp">eosio::checksum160 eosio::ripemd160 (
     <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * data,
@@ -5410,7 +5262,7 @@ Example: </p>
 <li><strong>length</strong> - Data length </li>
 </ul>
 <p><strong>Returns:</strong></p>
-<p><strong><a href="namespaceeosio_ac4333f7130bbcf42a6b9907900812dd0.md#1ac4333f7130bbcf42a6b9907900812dd0">eosio::checksum160</a></strong> - Computed digest </p>
+<p><strong><a href="namespaceeosio_a876f09efda2bbea70d86a6b00b7b6a12.md#1a876f09efda2bbea70d86a6b00b7b6a12">eosio::checksum160</a></strong> - Computed digest </p>
 <h3 id="function-recoverkey">function <a id="gaa1886ce30afee044bf8ee7ebf8eda72a" href="#gaa1886ce30afee044bf8ee7ebf8eda72a">recover_key</a></h3>
 <pre><code class="lang-cpp">eosio::public_key eosio::recover_key (
     <span class="hljs-keyword">const</span> eosio::checksum256 &amp; digest,
@@ -5441,7 +5293,7 @@ Example: </p>
 <li><strong>sig</strong> - Signature </li>
 <li><strong>pubkey</strong> - Public key </li>
 </ul>
-<h3 id="function-operator-436">function <a id="1ac9f0396ed775d5fe67df4b29bc7fc61f" href="#1ac9f0396ed775d5fe67df4b29bc7fc61f">operator&lt;&lt; (4/36)</a></h3>
+<h3 id="function-operator-132">function <a id="1ac9f0396ed775d5fe67df4b29bc7fc61f" href="#1ac9f0396ed775d5fe67df4b29bc7fc61f">operator&lt;&lt; (1/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">list</span>&lt; T &gt; &amp; l
@@ -5460,7 +5312,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-434">function <a id="1a0071f0e52a33e72d2b0da6fb69fd5a01" href="#1a0071f0e52a33e72d2b0da6fb69fd5a01">operator&gt;&gt; (4/34)</a></h3>
+<h3 id="function-operator-130">function <a id="1a0071f0e52a33e72d2b0da6fb69fd5a01" href="#1a0071f0e52a33e72d2b0da6fb69fd5a01">operator&gt;&gt; (1/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">list</span>&lt; T &gt; &amp; l
@@ -5479,7 +5331,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-536">function <a id="1a290409b4cb05910111f068b83f65018f" href="#1a290409b4cb05910111f068b83f65018f">operator&lt;&lt; (5/36)</a></h3>
+<h3 id="function-operator-232">function <a id="1a290409b4cb05910111f068b83f65018f" href="#1a290409b4cb05910111f068b83f65018f">operator&lt;&lt; (2/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">deque</span>&lt; T &gt; &amp; d
@@ -5498,7 +5350,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-534">function <a id="1a96515453c996337cf8a448415ea1997b" href="#1a96515453c996337cf8a448415ea1997b">operator&gt;&gt; (5/34)</a></h3>
+<h3 id="function-operator-230">function <a id="1a96515453c996337cf8a448415ea1997b" href="#1a96515453c996337cf8a448415ea1997b">operator&gt;&gt; (2/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">deque</span>&lt; T &gt; &amp; d
@@ -5517,7 +5369,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-636">function <a id="1a0b5c48a772a3cc24ae76620483aceb23" href="#1a0b5c48a772a3cc24ae76620483aceb23">operator&lt;&lt; (6/36)</a></h3>
+<h3 id="function-operator-332">function <a id="1a0b5c48a772a3cc24ae76620483aceb23" href="#1a0b5c48a772a3cc24ae76620483aceb23">operator&lt;&lt; (3/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::variant&lt; Ts... &gt; &amp; var
@@ -5543,7 +5395,7 @@ Example: </p>
     <span class="hljs-keyword">int</span> i
 )
 </code></pre>
-<h3 id="function-operator-634">function <a id="1a057c7fbba3a58e93208c3901359e5896" href="#1a057c7fbba3a58e93208c3901359e5896">operator&gt;&gt; (6/34)</a></h3>
+<h3 id="function-operator-330">function <a id="1a057c7fbba3a58e93208c3901359e5896" href="#1a057c7fbba3a58e93208c3901359e5896">operator&gt;&gt; (3/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-built_in">std</span>::variant&lt; Ts... &gt; &amp; var
@@ -5562,7 +5414,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-736">function <a id="1ad15a9f0908f1c0eaf52e8521d9479bdb" href="#1ad15a9f0908f1c0eaf52e8521d9479bdb">operator&lt;&lt; (7/36)</a></h3>
+<h3 id="function-operator-432">function <a id="1ad15a9f0908f1c0eaf52e8521d9479bdb" href="#1ad15a9f0908f1c0eaf52e8521d9479bdb">operator&lt;&lt; (4/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::pair&lt; T1, T2 &gt; &amp; t
@@ -5582,7 +5434,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-734">function <a id="1a14969913c302d3501a933a21364cac3a" href="#1a14969913c302d3501a933a21364cac3a">operator&gt;&gt; (7/34)</a></h3>
+<h3 id="function-operator-430">function <a id="1a14969913c302d3501a933a21364cac3a" href="#1a14969913c302d3501a933a21364cac3a">operator&gt;&gt; (4/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::pair&lt; T1, T2 &gt; &amp; t
@@ -5602,7 +5454,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-836">function <a id="1a188287b053c352c204cf0ef83786cdcd" href="#1a188287b053c352c204cf0ef83786cdcd">operator&lt;&lt; (8/36)</a></h3>
+<h3 id="function-operator-532">function <a id="1a188287b053c352c204cf0ef83786cdcd" href="#1a188287b053c352c204cf0ef83786cdcd">operator&lt;&lt; (5/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::optional&lt; T &gt; &amp; opt
@@ -5621,7 +5473,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-834">function <a id="1a37421e74f3192dbb7ca11ff9b9c0864c" href="#1a37421e74f3192dbb7ca11ff9b9c0864c">operator&gt;&gt; (8/34)</a></h3>
+<h3 id="function-operator-530">function <a id="1a37421e74f3192dbb7ca11ff9b9c0864c" href="#1a37421e74f3192dbb7ca11ff9b9c0864c">operator&gt;&gt; (5/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-built_in">std</span>::optional&lt; T &gt; &amp; opt
@@ -5640,7 +5492,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-936">function <a id="1afe4a7f3bd49b821a6b3f0a3b9c45a4a5" href="#1afe4a7f3bd49b821a6b3f0a3b9c45a4a5">operator&lt;&lt; (9/36)</a></h3>
+<h3 id="function-operator-632">function <a id="1afe4a7f3bd49b821a6b3f0a3b9c45a4a5" href="#1afe4a7f3bd49b821a6b3f0a3b9c45a4a5">operator&lt;&lt; (6/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-keyword">bool</span> &amp; d
@@ -5659,7 +5511,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-934">function <a id="1a9b454140b1bb214fbd65d75887098864" href="#1a9b454140b1bb214fbd65d75887098864">operator&gt;&gt; (9/34)</a></h3>
+<h3 id="function-operator-630">function <a id="1a9b454140b1bb214fbd65d75887098864" href="#1a9b454140b1bb214fbd65d75887098864">operator&gt;&gt; (6/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">bool</span> &amp; d
@@ -5678,7 +5530,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-1036">function <a id="1a13cf8e60e9bea7a5f781e76578f2e760" href="#1a13cf8e60e9bea7a5f781e76578f2e760">operator&lt;&lt; (10/36)</a></h3>
+<h3 id="function-operator-732">function <a id="1a13cf8e60e9bea7a5f781e76578f2e760" href="#1a13cf8e60e9bea7a5f781e76578f2e760">operator&lt;&lt; (7/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; v
@@ -5697,7 +5549,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1034">function <a id="1a6353b8231d3e9f73a9dd4334d9af8773" href="#1a6353b8231d3e9f73a9dd4334d9af8773">operator&gt;&gt; (10/34)</a></h3>
+<h3 id="function-operator-730">function <a id="1a6353b8231d3e9f73a9dd4334d9af8773" href="#1a6353b8231d3e9f73a9dd4334d9af8773">operator&gt;&gt; (7/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> &amp; v
@@ -5716,7 +5568,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1136">function <a id="1a3f0308a515bfcb063ba2870b8609edc1" href="#1a3f0308a515bfcb063ba2870b8609edc1">operator&lt;&lt; (11/36)</a></h3>
+<h3 id="function-operator-832">function <a id="1a3f0308a515bfcb063ba2870b8609edc1" href="#1a3f0308a515bfcb063ba2870b8609edc1">operator&lt;&lt; (8/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">array</span>&lt; T, N &gt; &amp; v
@@ -5737,7 +5589,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1134">function <a id="1a058f5e371f40bef213bd26d7d67cb488" href="#1a058f5e371f40bef213bd26d7d67cb488">operator&gt;&gt; (11/34)</a></h3>
+<h3 id="function-operator-830">function <a id="1a058f5e371f40bef213bd26d7d67cb488" href="#1a058f5e371f40bef213bd26d7d67cb488">operator&gt;&gt; (8/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">array</span>&lt; T, N &gt; &amp; v
@@ -5758,7 +5610,7 @@ Example: </p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1234">function <a id="1ad9dcedb9bba000aa00883f426142c7b6" href="#1ad9dcedb9bba000aa00883f426142c7b6">operator&gt;&gt; (12/34)</a></h3>
+<h3 id="function-operator-930">function <a id="1ad9dcedb9bba000aa00883f426142c7b6" href="#1ad9dcedb9bba000aa00883f426142c7b6">operator&gt;&gt; (9/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     T 
@@ -5779,7 +5631,7 @@ Example: </p>
 <p>DataStream&amp; - Reference to the datastream </p>
 <p><strong>Post</strong></p>
 <p>Throw an exception if it is a pointer </p>
-<h3 id="function-operator-1236">function <a id="1a0c8758a01d2cdcd99922c268f2f4e4e9" href="#1a0c8758a01d2cdcd99922c268f2f4e4e9">operator&lt;&lt; (12/36)</a></h3>
+<h3 id="function-operator-932">function <a id="1a0c8758a01d2cdcd99922c268f2f4e4e9" href="#1a0c8758a01d2cdcd99922c268f2f4e4e9">operator&lt;&lt; (9/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::operator&lt;&lt; (
     DataStream &amp; ds,
     const T(&amp;) v
@@ -5813,7 +5665,7 @@ Serialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1334">function <a id="1a9ddfcc1002e9cd4c267ca0986753c686" href="#1a9ddfcc1002e9cd4c267ca0986753c686">operator&gt;&gt; (13/34)</a></h3>
+<h3 id="function-operator-1030">function <a id="1a9ddfcc1002e9cd4c267ca0986753c686" href="#1a9ddfcc1002e9cd4c267ca0986753c686">operator&gt;&gt; (10/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     T(&amp;) v
@@ -5849,7 +5701,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1336">function <a id="1a1ad434918ca60bc57eef09e755015537" href="#1a1ad434918ca60bc57eef09e755015537">operator&lt;&lt; (13/36)</a></h3>
+<h3 id="function-operator-1032">function <a id="1a1ad434918ca60bc57eef09e755015537" href="#1a1ad434918ca60bc57eef09e755015537">operator&lt;&lt; (10/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; <span class="hljs-keyword">char</span> &gt; &amp; v
@@ -5868,7 +5720,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1436">function <a id="1af04f8b1af2fc1a044207288eed785a8a" href="#1af04f8b1af2fc1a044207288eed785a8a">operator&lt;&lt; (14/36)</a></h3>
+<h3 id="function-operator-1132">function <a id="1af04f8b1af2fc1a044207288eed785a8a" href="#1af04f8b1af2fc1a044207288eed785a8a">operator&lt;&lt; (11/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; T &gt; &amp; v
@@ -5888,7 +5740,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1434">function <a id="1aad72af19320007a0de1bab22c41b4c95" href="#1aad72af19320007a0de1bab22c41b4c95">operator&gt;&gt; (14/34)</a></h3>
+<h3 id="function-operator-1130">function <a id="1aad72af19320007a0de1bab22c41b4c95" href="#1aad72af19320007a0de1bab22c41b4c95">operator&gt;&gt; (11/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; <span class="hljs-keyword">char</span> &gt; &amp; v
@@ -5907,7 +5759,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1534">function <a id="1ad76d5e39cba3758b0a6fcd9f2ed638da" href="#1ad76d5e39cba3758b0a6fcd9f2ed638da">operator&gt;&gt; (15/34)</a></h3>
+<h3 id="function-operator-1230">function <a id="1ad76d5e39cba3758b0a6fcd9f2ed638da" href="#1ad76d5e39cba3758b0a6fcd9f2ed638da">operator&gt;&gt; (12/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt; T &gt; &amp; v
@@ -5927,7 +5779,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1536">function <a id="1a6c52ae334f7788160b07ef4e69f23cda" href="#1a6c52ae334f7788160b07ef4e69f23cda">operator&lt;&lt; (15/36)</a></h3>
+<h3 id="function-operator-1232">function <a id="1a6c52ae334f7788160b07ef4e69f23cda" href="#1a6c52ae334f7788160b07ef4e69f23cda">operator&lt;&lt; (12/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">set</span>&lt; T &gt; &amp; s
@@ -5947,7 +5799,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1634">function <a id="1ae0800999ef98acbf91f47d5c8ca36da1" href="#1ae0800999ef98acbf91f47d5c8ca36da1">operator&gt;&gt; (16/34)</a></h3>
+<h3 id="function-operator-1330">function <a id="1ae0800999ef98acbf91f47d5c8ca36da1" href="#1ae0800999ef98acbf91f47d5c8ca36da1">operator&gt;&gt; (13/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">set</span>&lt; T &gt; &amp; s
@@ -5967,7 +5819,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1636">function <a id="1a56df092b4f01a1ab671a4b30bc49af7d" href="#1a56df092b4f01a1ab671a4b30bc49af7d">operator&lt;&lt; (16/36)</a></h3>
+<h3 id="function-operator-1332">function <a id="1a56df092b4f01a1ab671a4b30bc49af7d" href="#1a56df092b4f01a1ab671a4b30bc49af7d">operator&lt;&lt; (13/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">map</span>&lt; K, V &gt; &amp; m
@@ -5988,7 +5840,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1734">function <a id="1a8553a067cd5da1528c8eedfd4c768c22" href="#1a8553a067cd5da1528c8eedfd4c768c22">operator&gt;&gt; (17/34)</a></h3>
+<h3 id="function-operator-1430">function <a id="1a8553a067cd5da1528c8eedfd4c768c22" href="#1a8553a067cd5da1528c8eedfd4c768c22">operator&gt;&gt; (14/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::<span class="hljs-built_in">map</span>&lt; K, V &gt; &amp; m
@@ -6009,7 +5861,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1736">function <a id="1a655d6acebfb73e7cc18dab6dd6b1f410" href="#1a655d6acebfb73e7cc18dab6dd6b1f410">operator&lt;&lt; (17/36)</a></h3>
+<h3 id="function-operator-1432">function <a id="1a655d6acebfb73e7cc18dab6dd6b1f410" href="#1a655d6acebfb73e7cc18dab6dd6b1f410">operator&lt;&lt; (14/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::tuple&lt; Args... &gt; &amp; t
@@ -6029,7 +5881,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1834">function <a id="1a0ab93186ccff408b8779ae69abc16c1d" href="#1a0ab93186ccff408b8779ae69abc16c1d">operator&gt;&gt; (18/34)</a></h3>
+<h3 id="function-operator-1530">function <a id="1a0ab93186ccff408b8779ae69abc16c1d" href="#1a0ab93186ccff408b8779ae69abc16c1d">operator&gt;&gt; (15/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     <span class="hljs-built_in">std</span>::tuple&lt; Args... &gt; &amp; t
@@ -6049,7 +5901,7 @@ Deserialize a fixed size C array of non-primitive and non-pointer type</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1836">function <a id="1a59511f8552dbf4a2aced270041c17f04" href="#1a59511f8552dbf4a2aced270041c17f04">operator&lt;&lt; (18/36)</a></h3>
+<h3 id="function-operator-1532">function <a id="1a59511f8552dbf4a2aced270041c17f04" href="#1a59511f8552dbf4a2aced270041c17f04">operator&lt;&lt; (15/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> T &amp; v
@@ -6083,7 +5935,7 @@ Serialize a class</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-1934">function <a id="1a7d64e2f48bca13601cf6606934e6e8e6" href="#1a7d64e2f48bca13601cf6606934e6e8e6">operator&gt;&gt; (19/34)</a></h3>
+<h3 id="function-operator-1630">function <a id="1a7d64e2f48bca13601cf6606934e6e8e6" href="#1a7d64e2f48bca13601cf6606934e6e8e6">operator&gt;&gt; (16/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     T &amp; v
@@ -6187,135 +6039,7 @@ Deserialize a class</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>bytes - The packed data </p>
-<h3 id="function-operator">function <a id="ga82eb12fa571ac6fa491f1620a0b341ff" href="#ga82eb12fa571ac6fa491f1620a0b341ff">operator==</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>== (
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
-)
-</code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
-<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>if c1 == c2, return true, otherwise false </p>
-<h3 id="function-operator">function <a id="ga358a5fa3444d6ec9396d223364647ac8" href="#ga358a5fa3444d6ec9396d223364647ac8">operator!=</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>!= (
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
-)
-</code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
-<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>if c1 != c2, return true, otherwise false </p>
-<h3 id="function-operator">function <a id="ga69a98da44d9f8a04c4601586266c6f77" href="#ga69a98da44d9f8a04c4601586266c6f77">operator&gt;</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&gt; (
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
-)
-</code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
-<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>if c1 &gt; c2, return true, otherwise false </p>
-<h3 id="function-operator">function <a id="gad1204d2a89b55f59e178b5228ced86c3" href="#gad1204d2a89b55f59e178b5228ced86c3">operator&lt;</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&lt; (
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
-)
-</code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
-<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>if c1 &lt; c2, return true, otherwise false </p>
-<h3 id="function-operator">function <a id="ga60e3b9c6ab8386dfb90d4853fd6414fc" href="#ga60e3b9c6ab8386dfb90d4853fd6414fc">operator&gt;=</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&gt;= (
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
-)
-</code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
-<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>if c1 &gt;= c2, return true, otherwise false </p>
-<h3 id="function-operator">function <a id="ga11b16d988552ea793dcf59543e85e1a7" href="#ga11b16d988552ea793dcf59543e85e1a7">operator&lt;=</a></h3>
-<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&lt;= (
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
-)
-</code></pre>
-<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
-<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>if c1 &lt;= c2, return true, otherwise false </p>
-<h3 id="function-operator-1936">function <a id="1a8ba60976b20ebc72d2dcaf088dc954ca" href="#1a8ba60976b20ebc72d2dcaf088dc954ca">operator&lt;&lt; (19/36)</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
-    DataStream &amp; ds,
-    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; d
-)
-</code></pre>
-<p>Serialize a <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>. </p>
-<p>Serialize a <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> into a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to write </li>
-<li><strong>d</strong> - The value to serialize </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2034">function <a id="1a2f51d9a50e9e3d5e714975520d0bc265" href="#1a2f51d9a50e9e3d5e714975520d0bc265">operator&gt;&gt; (20/34)</a></h3>
-<pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
-    DataStream &amp; ds,
-    fixed_bytes&lt; Size &gt; &amp; d
-)
-</code></pre>
-<p>Deserialize a <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong>. </p>
-<p>Deserialize a <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> from a stream</p>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>ds</strong> - The stream to read </li>
-<li><strong>d</strong> - The destination for deserialized value </li>
-</ul>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>DataStream</strong> - Type of datastream buffer </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2036">function <a id="1a3fdefcc62e5d9691425078f03608ce59" href="#1a3fdefcc62e5d9691425078f03608ce59">operator&lt;&lt; (20/36)</a></h3>
+<h3 id="function-operator-1632">function <a id="1a3fdefcc62e5d9691425078f03608ce59" href="#1a3fdefcc62e5d9691425078f03608ce59">operator&lt;&lt; (16/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> ::eosio::ignore_wrapper&lt; T &gt; &amp; val
@@ -6334,7 +6058,7 @@ Deserialize a class</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2136">function <a id="1aeeee506f8520cc72e37d5b9032e5b59e" href="#1aeeee506f8520cc72e37d5b9032e5b59e">operator&lt;&lt; (21/36)</a></h3>
+<h3 id="function-operator-1732">function <a id="1aeeee506f8520cc72e37d5b9032e5b59e" href="#1aeeee506f8520cc72e37d5b9032e5b59e">operator&lt;&lt; (17/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> ::eosio::ignore&lt; T &gt; &amp; val
@@ -6353,7 +6077,7 @@ Deserialize a class</p>
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2134">function <a id="1a231bc1ee2c299d3e259ddddc1bf1e698" href="#1a231bc1ee2c299d3e259ddddc1bf1e698">operator&gt;&gt; (21/34)</a></h3>
+<h3 id="function-operator-1730">function <a id="1a231bc1ee2c299d3e259ddddc1bf1e698" href="#1a231bc1ee2c299d3e259ddddc1bf1e698">operator&gt;&gt; (17/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     ::eosio::ignore&lt; T &gt; &amp; 
@@ -6520,39 +6244,12 @@ Deserialize a class</p>
 print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 <span class="hljs-comment">// Ouput: Hello World!100000000000000000087654323456abcde</span>
 </code></pre>
-<h3 id="function-operator-2236">function <a id="ga0374bf9eee164d4426a0be87f8e7b814" href="#ga0374bf9eee164d4426a0be87f8e7b814">operator&lt;&lt; (22/36)</a></h3>
-<pre><code class="lang-cpp">iostream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
-    iostream &amp; out,
-    <span class="hljs-keyword">const</span> T &amp; v
-)
-</code></pre>
-<p>Overload c++ iostream</p>
-<p><strong>Template parameters:</strong></p>
-<ul>
-<li><strong>Arg</strong> - Type of the value used to replace the format specifier </li>
-<li><strong>Args</strong> - Type of the value used to replace the format specifier </li>
-</ul>
-<p><strong>Parameters:</strong></p>
-<ul>
-<li><strong>out</strong> - Output strem </li>
-<li><strong>v</strong> - The value to be printed </li>
-</ul>
-<p><strong>Returns:</strong></p>
-<p>iostream&amp; - Reference to the input output stream</p>
-<p>Example:</p>
-<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *s = <span class="hljs-string">&quot;Hello World!&quot;</span>;
-<span class="hljs-keyword">uint64_t</span> unsigned_64_bit_int = <span class="hljs-number">1e+18</span>;
-<span class="hljs-keyword">uint128_t</span> unsigned_128_bit_int (<span class="hljs-number">87654323456</span>);
-<span class="hljs-keyword">uint64_t</span> string_as_unsigned_64_bit = <span class="hljs-string">&quot;abcde&quot;</span>_n;
-<span class="hljs-built_in">std</span>::out &lt;&lt; s &lt;&lt; <span class="hljs-string">&quot; &quot;</span> &lt;&lt; unsigned_64_bit_int &lt;&lt; <span class="hljs-string">&quot; &quot;</span>  &lt;&lt; unsigned_128_bit_int &lt;&lt; <span class="hljs-string">&quot; &quot;</span> &lt;&lt; string_as_unsigned_64_bit;
-<span class="hljs-comment">// Output: Hello World! 1000000000000000000 87654323456 abcde</span>
-</code></pre>
 <h3 id="function-overloaded-22">function <a id="1a3019314f98ba35c586a0d3c50747e7ee" href="#1a3019314f98ba35c586a0d3c50747e7ee">overloaded (2/2)</a></h3>
 <pre><code class="lang-cpp">eosio::overloaded (
     Ts... 
 )
 </code></pre>
-<h3 id="function-operator-2336">function <a id="1a4739f011878371139c6df4fb6fa454b0" href="#1a4739f011878371139c6df4fb6fa454b0">operator&lt;&lt; (23/36)</a></h3>
+<h3 id="function-operator-1832">function <a id="1a4739f011878371139c6df4fb6fa454b0" href="#1a4739f011878371139c6df4fb6fa454b0">operator&lt;&lt; (18/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> eosio::symbol_code sym_code
@@ -6570,7 +6267,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2234">function <a id="1a9ca8e9f5c635c2130f5eec08a2795bd3" href="#1a9ca8e9f5c635c2130f5eec08a2795bd3">operator&gt;&gt; (22/34)</a></h3>
+<h3 id="function-operator-1830">function <a id="1a9ca8e9f5c635c2130f5eec08a2795bd3" href="#1a9ca8e9f5c635c2130f5eec08a2795bd3">operator&gt;&gt; (18/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     eosio::symbol_code &amp; sym_code
@@ -6588,7 +6285,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2436">function <a id="1a5085380e49e98c13e2578de310a268bd" href="#1a5085380e49e98c13e2578de310a268bd">operator&lt;&lt; (24/36)</a></h3>
+<h3 id="function-operator-1932">function <a id="1a5085380e49e98c13e2578de310a268bd" href="#1a5085380e49e98c13e2578de310a268bd">operator&lt;&lt; (19/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> eosio::symbol sym
@@ -6607,7 +6304,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-2334">function <a id="1a3e3d691b749d91873b76af1683dc32bc" href="#1a3e3d691b749d91873b76af1683dc32bc">operator&gt;&gt; (23/34)</a></h3>
+<h3 id="function-operator-1930">function <a id="1a3e3d691b749d91873b76af1683dc32bc" href="#1a3e3d691b749d91873b76af1683dc32bc">operator&gt;&gt; (19/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     eosio::symbol &amp; sym
@@ -6651,7 +6348,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
     <span class="hljs-keyword">int64_t</span> d
 )
 </code></pre>
-<h3 id="function-operator-2536">function <a id="1a4f20e587315c1c625ec8c7092f9d8465" href="#1a4f20e587315c1c625ec8c7092f9d8465">operator&lt;&lt; (25/36)</a></h3>
+<h3 id="function-operator-2032">function <a id="1a4f20e587315c1c625ec8c7092f9d8465" href="#1a4f20e587315c1c625ec8c7092f9d8465">operator&lt;&lt; (20/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> eosio::symbol sym
@@ -6670,7 +6367,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2434">function <a id="1a015cd9edd44cc1af80641c39b4816f13" href="#1a015cd9edd44cc1af80641c39b4816f13">operator&gt;&gt; (24/34)</a></h3>
+<h3 id="function-operator-2030">function <a id="1a015cd9edd44cc1af80641c39b4816f13" href="#1a015cd9edd44cc1af80641c39b4816f13">operator&gt;&gt; (20/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     eosio::symbol &amp; sym
@@ -6689,7 +6386,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2636">function <a id="1a344108ff96bcee67d40711dacdd42845" href="#1a344108ff96bcee67d40711dacdd42845">operator&lt;&lt; (26/36)</a></h3>
+<h3 id="function-operator-2132">function <a id="1a344108ff96bcee67d40711dacdd42845" href="#1a344108ff96bcee67d40711dacdd42845">operator&lt;&lt; (21/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> ::eosio::ignore_wrapper&lt; T &gt; &amp; val
@@ -6708,7 +6405,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2736">function <a id="1a05879a71914d293c8a30b1a6710f8e51" href="#1a05879a71914d293c8a30b1a6710f8e51">operator&lt;&lt; (27/36)</a></h3>
+<h3 id="function-operator-2232">function <a id="1a05879a71914d293c8a30b1a6710f8e51" href="#1a05879a71914d293c8a30b1a6710f8e51">operator&lt;&lt; (22/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> ::eosio::ignore&lt; T &gt; &amp; val
@@ -6727,7 +6424,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2534">function <a id="1afea0491fecd3df192a3f245e8105a026" href="#1afea0491fecd3df192a3f245e8105a026">operator&gt;&gt; (25/34)</a></h3>
+<h3 id="function-operator-2130">function <a id="1afea0491fecd3df192a3f245e8105a026" href="#1afea0491fecd3df192a3f245e8105a026">operator&gt;&gt; (21/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     ::eosio::ignore&lt; T &gt; 
@@ -6746,7 +6443,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2836">function <a id="1a895558601cccce7687b3b63fe371c657" href="#1a895558601cccce7687b3b63fe371c657">operator&lt;&lt; (28/36)</a></h3>
+<h3 id="function-operator-2332">function <a id="1a895558601cccce7687b3b63fe371c657" href="#1a895558601cccce7687b3b63fe371c657">operator&lt;&lt; (23/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> capi_public_key &amp; pubkey
@@ -6765,7 +6462,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2634">function <a id="1a6f1b392200e9452c7f410ffd8fdfafe1" href="#1a6f1b392200e9452c7f410ffd8fdfafe1">operator&gt;&gt; (26/34)</a></h3>
+<h3 id="function-operator-2230">function <a id="1a6f1b392200e9452c7f410ffd8fdfafe1" href="#1a6f1b392200e9452c7f410ffd8fdfafe1">operator&gt;&gt; (22/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     capi_public_key &amp; pubkey
@@ -6784,7 +6481,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2936">function <a id="1a67416a6e3cb3a9b542b58803b94c9bc3" href="#1a67416a6e3cb3a9b542b58803b94c9bc3">operator&lt;&lt; (29/36)</a></h3>
+<h3 id="function-operator-2432">function <a id="1a67416a6e3cb3a9b542b58803b94c9bc3" href="#1a67416a6e3cb3a9b542b58803b94c9bc3">operator&lt;&lt; (24/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> eosio::public_key &amp; pubkey
@@ -6803,7 +6500,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2734">function <a id="1a719a4dff2f8561a51caa07eb7ebd7ef6" href="#1a719a4dff2f8561a51caa07eb7ebd7ef6">operator&gt;&gt; (27/34)</a></h3>
+<h3 id="function-operator-2330">function <a id="1a719a4dff2f8561a51caa07eb7ebd7ef6" href="#1a719a4dff2f8561a51caa07eb7ebd7ef6">operator&gt;&gt; (23/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     eosio::public_key &amp; pubkey
@@ -6822,7 +6519,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3036">function <a id="1ad5dc9135f531bc9981fa013f1a34bae3" href="#1ad5dc9135f531bc9981fa013f1a34bae3">operator&lt;&lt; (30/36)</a></h3>
+<h3 id="function-operator-2532">function <a id="1ad5dc9135f531bc9981fa013f1a34bae3" href="#1ad5dc9135f531bc9981fa013f1a34bae3">operator&lt;&lt; (25/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> eosio::signature &amp; sig
@@ -6841,7 +6538,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2834">function <a id="1ad4a63c7fb112a001591af1a9578f8399" href="#1ad4a63c7fb112a001591af1a9578f8399">operator&gt;&gt; (28/34)</a></h3>
+<h3 id="function-operator-2430">function <a id="1ad4a63c7fb112a001591af1a9578f8399" href="#1ad4a63c7fb112a001591af1a9578f8399">operator&gt;&gt; (24/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     eosio::signature &amp; sig
@@ -6860,7 +6557,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3136">function <a id="1a6a2023c2129d1b77ce8bc4c867b8da71" href="#1a6a2023c2129d1b77ce8bc4c867b8da71">operator&lt;&lt; (31/36)</a></h3>
+<h3 id="function-operator-2632">function <a id="1a6a2023c2129d1b77ce8bc4c867b8da71" href="#1a6a2023c2129d1b77ce8bc4c867b8da71">operator&lt;&lt; (26/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; d
@@ -6879,7 +6576,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-2934">function <a id="1ac391b9b8310b64532cdcdd4e677b8e4f" href="#1ac391b9b8310b64532cdcdd4e677b8e4f">operator&gt;&gt; (29/34)</a></h3>
+<h3 id="function-operator-2530">function <a id="1ac391b9b8310b64532cdcdd4e677b8e4f" href="#1ac391b9b8310b64532cdcdd4e677b8e4f">operator&gt;&gt; (25/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     fixed_bytes&lt; Size &gt; &amp; d
@@ -6898,7 +6595,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3236">function <a id="1a69731c7e836d6521c2aa7d67ad1dbc4d" href="#1a69731c7e836d6521c2aa7d67ad1dbc4d">operator&lt;&lt; (32/36)</a></h3>
+<h3 id="function-operator-2732">function <a id="1a69731c7e836d6521c2aa7d67ad1dbc4d" href="#1a69731c7e836d6521c2aa7d67ad1dbc4d">operator&lt;&lt; (27/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> capi_checksum256 &amp; d
@@ -6917,7 +6614,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3034">function <a id="1af18798375dd9ed43bea5888101883b9c" href="#1af18798375dd9ed43bea5888101883b9c">operator&gt;&gt; (30/34)</a></h3>
+<h3 id="function-operator-2630">function <a id="1af18798375dd9ed43bea5888101883b9c" href="#1af18798375dd9ed43bea5888101883b9c">operator&gt;&gt; (26/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     capi_checksum256 &amp; d
@@ -6936,7 +6633,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3336">function <a id="1ab7049fdaa7895e6c31a482deba846434" href="#1ab7049fdaa7895e6c31a482deba846434">operator&lt;&lt; (33/36)</a></h3>
+<h3 id="function-operator-2832">function <a id="1ab7049fdaa7895e6c31a482deba846434" href="#1ab7049fdaa7895e6c31a482deba846434">operator&lt;&lt; (28/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> boost::container::flat_set&lt; T &gt; &amp; s
@@ -6956,7 +6653,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-3134">function <a id="1a5f545f70b39155d1cd1da85f0e00b742" href="#1a5f545f70b39155d1cd1da85f0e00b742">operator&gt;&gt; (31/34)</a></h3>
+<h3 id="function-operator-2730">function <a id="1a5f545f70b39155d1cd1da85f0e00b742" href="#1a5f545f70b39155d1cd1da85f0e00b742">operator&gt;&gt; (27/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     boost::container::flat_set&lt; T &gt; &amp; s
@@ -6976,7 +6673,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-3436">function <a id="1a85b47a27bb41a2854d2b8daea9e7b9f0" href="#1a85b47a27bb41a2854d2b8daea9e7b9f0">operator&lt;&lt; (34/36)</a></h3>
+<h3 id="function-operator-2932">function <a id="1a85b47a27bb41a2854d2b8daea9e7b9f0" href="#1a85b47a27bb41a2854d2b8daea9e7b9f0">operator&lt;&lt; (29/32)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     DataStream &amp; ds,
     <span class="hljs-keyword">const</span> boost::container::flat_map&lt; K, V &gt; &amp; m
@@ -6997,7 +6694,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-3234">function <a id="1a3b973878181cef2bdad7139958bd6ecf" href="#1a3b973878181cef2bdad7139958bd6ecf">operator&gt;&gt; (32/34)</a></h3>
+<h3 id="function-operator-2830">function <a id="1a3b973878181cef2bdad7139958bd6ecf" href="#1a3b973878181cef2bdad7139958bd6ecf">operator&gt;&gt; (28/30)</a></h3>
 <pre><code class="lang-cpp">DataStream &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     DataStream &amp; ds,
     boost::container::flat_map&lt; K, V &gt; &amp; m
@@ -7018,7 +6715,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>DataStream&amp; - Reference to the datastream </p>
-<h3 id="function-operator-3536">function <a id="1ac006ab398b288a0582a2a59b991bf37c" href="#1ac006ab398b288a0582a2a59b991bf37c">operator&lt;&lt; (35/36)</a></h3>
+<h3 id="function-operator-3032">function <a id="1ac006ab398b288a0582a2a59b991bf37c" href="#1ac006ab398b288a0582a2a59b991bf37c">operator&lt;&lt; (30/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> capi_checksum160 &amp; cs
@@ -7037,7 +6734,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3334">function <a id="1a2cbcd06b5aae0e8ffd8b1550b0f39983" href="#1a2cbcd06b5aae0e8ffd8b1550b0f39983">operator&gt;&gt; (33/34)</a></h3>
+<h3 id="function-operator-2930">function <a id="1a2cbcd06b5aae0e8ffd8b1550b0f39983" href="#1a2cbcd06b5aae0e8ffd8b1550b0f39983">operator&gt;&gt; (29/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     capi_checksum160 &amp; cs
@@ -7056,7 +6753,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3636">function <a id="1afd1c5d3fad33115c2ba6a65f8f4b5792" href="#1afd1c5d3fad33115c2ba6a65f8f4b5792">operator&lt;&lt; (36/36)</a></h3>
+<h3 id="function-operator-3132">function <a id="1afd1c5d3fad33115c2ba6a65f8f4b5792" href="#1afd1c5d3fad33115c2ba6a65f8f4b5792">operator&lt;&lt; (31/32)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
     datastream&lt; Stream &gt; &amp; ds,
     <span class="hljs-keyword">const</span> capi_checksum512 &amp; cs
@@ -7075,7 +6772,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
-<h3 id="function-operator-3434">function <a id="1a14d1988dcb3235cf059d90c01a2b7d74" href="#1a14d1988dcb3235cf059d90c01a2b7d74">operator&gt;&gt; (34/34)</a></h3>
+<h3 id="function-operator-3030">function <a id="1a14d1988dcb3235cf059d90c01a2b7d74" href="#1a14d1988dcb3235cf059d90c01a2b7d74">operator&gt;&gt; (30/30)</a></h3>
 <pre><code class="lang-cpp">datastream&lt; Stream &gt; &amp; eosio::<span class="hljs-keyword">operator</span>&gt;&gt; (
     datastream&lt; Stream &gt; &amp; ds,
     capi_checksum512 &amp; cs
@@ -7094,6 +6791,102 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 </ul>
 <p><strong>Returns:</strong></p>
 <p>datastream<stream>&amp; - Reference to the datastream </stream></p>
+<h3 id="function-dispatch-22">function <a id="1a78b2709044b48bb39105d37d787fefea" href="#1a78b2709044b48bb39105d37d787fefea">dispatch (2/2)</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::dispatch (
+    <span class="hljs-keyword">uint64_t</span> code,
+    <span class="hljs-keyword">uint64_t</span> act
+)
+</code></pre>
+<h3 id="function-operator">function <a id="ga82eb12fa571ac6fa491f1620a0b341ff" href="#ga82eb12fa571ac6fa491f1620a0b341ff">operator==</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>== (
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
+)
+</code></pre>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>if c1 == c2, return true, otherwise false </p>
+<h3 id="function-operator">function <a id="ga358a5fa3444d6ec9396d223364647ac8" href="#ga358a5fa3444d6ec9396d223364647ac8">operator!=</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>!= (
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
+)
+</code></pre>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>if c1 != c2, return true, otherwise false </p>
+<h3 id="function-operator">function <a id="ga69a98da44d9f8a04c4601586266c6f77" href="#ga69a98da44d9f8a04c4601586266c6f77">operator&gt;</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&gt; (
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
+)
+</code></pre>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>if c1 &gt; c2, return true, otherwise false </p>
+<h3 id="function-operator">function <a id="gad1204d2a89b55f59e178b5228ced86c3" href="#gad1204d2a89b55f59e178b5228ced86c3">operator&lt;</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&lt; (
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
+)
+</code></pre>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>if c1 &lt; c2, return true, otherwise false </p>
+<h3 id="function-operator">function <a id="ga60e3b9c6ab8386dfb90d4853fd6414fc" href="#ga60e3b9c6ab8386dfb90d4853fd6414fc">operator&gt;=</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&gt;= (
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
+)
+</code></pre>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>if c1 &gt;= c2, return true, otherwise false </p>
+<h3 id="function-operator">function <a id="ga11b16d988552ea793dcf59543e85e1a7" href="#ga11b16d988552ea793dcf59543e85e1a7">operator&lt;=</a></h3>
+<pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::<span class="hljs-keyword">operator</span>&lt;= (
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c1,
+    <span class="hljs-keyword">const</span> fixed_bytes&lt; Size &gt; &amp; c2
+)
+</code></pre>
+<p>Compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2. </p>
+<p>Lexicographically compares two <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> variables c1 and c2 </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>c1</strong> - First <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+<li><strong>c2</strong> - Second <strong><a href="classeosio_1_1fixed__bytes.html">fixed_bytes</a></strong> object to compare </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>if c1 &lt;= c2, return true, otherwise false </p>
 <h3 id="function-checkpermissionauthorization">function <a id="ga2ded7b51e4363cd7634070612add2e99" href="#ga2ded7b51e4363cd7634070612add2e99">check_permission_authorization</a></h3>
 <pre><code class="lang-cpp"><span class="hljs-keyword">bool</span> eosio::check_permission_authorization (
     name account,
@@ -7156,6 +6949,33 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
 <ul>
 <li><strong>sym_code</strong> symbol code to be printed </li>
 </ul>
+<h3 id="function-operator-3232">function <a id="ga827f0aac6315e7963bcd52656cd7eeed" href="#ga827f0aac6315e7963bcd52656cd7eeed">operator&lt;&lt; (32/32)</a></h3>
+<pre><code class="lang-cpp">iostream &amp; eosio::<span class="hljs-keyword">operator</span>&lt;&lt; (
+    iostream &amp; out,
+    <span class="hljs-keyword">const</span> T &amp; v
+)
+</code></pre>
+<p>Overload c++ iostream</p>
+<p><strong>Template parameters:</strong></p>
+<ul>
+<li><strong>Arg</strong> - Type of the value used to replace the format specifier </li>
+<li><strong>Args</strong> - Type of the value used to replace the format specifier </li>
+</ul>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>out</strong> - Output strem </li>
+<li><strong>v</strong> - The value to be printed </li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p>iostream&amp; - Reference to the input output stream</p>
+<p>Example:</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *s = <span class="hljs-string">&quot;Hello World!&quot;</span>;
+<span class="hljs-keyword">uint64_t</span> unsigned_64_bit_int = <span class="hljs-number">1e+18</span>;
+<span class="hljs-keyword">uint128_t</span> unsigned_128_bit_int (<span class="hljs-number">87654323456</span>);
+<span class="hljs-keyword">uint64_t</span> string_as_unsigned_64_bit = <span class="hljs-string">&quot;abcde&quot;</span>_n;
+<span class="hljs-built_in">std</span>::out &lt;&lt; s &lt;&lt; <span class="hljs-string">&quot; &quot;</span> &lt;&lt; unsigned_64_bit_int &lt;&lt; <span class="hljs-string">&quot; &quot;</span>  &lt;&lt; unsigned_128_bit_int &lt;&lt; <span class="hljs-string">&quot; &quot;</span> &lt;&lt; string_as_unsigned_64_bit;
+<span class="hljs-comment">// Output: Hello World! 1000000000000000000 87654323456 abcde</span>
+</code></pre>
 <hr>
 <p>The documentation for this class was generated from the following file: <code>in/eosio.cdt/libraries/eosiolib/action.hpp</code></p>
 
@@ -7201,7 +7021,7 @@ print(s , unsigned_64_bit_int, unsigned_128_bit_int, string_as_unsigned_64_bit);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"search":{"keywords":["eosio","action","action_wrapper","asset","binary_extension","block_timestamp","blockchain_parameters","const_mem_fun","contract","datastream","datastream< size_t >","extended_asset","extended_symbol","fixed_bytes","ignore","ignore_wrapper","indexed_by","inline_dispatcher","inline_dispatcher< void(T::*)(Args...), Name >","iostream","microseconds","multi_index","name","onerror","overloaded","permission_level","producer_key","producer_schedule","public_key","rope","signature","signed_int","singleton","symbol","symbol_code","time_point","time_point_sec","transaction","transaction_header","unsigned_int","variant_action_wrapper","extension","extensions_type","checksum160","checksum256","checksum512","block_timestamp_type","same_payer","cout","same_payer","cout","unpack_action_data","require_recipient","require_recipient","require_auth","require_auth","has_auth","is_account","dispatch_inline","publication_time","current_receiver","read_action_data","action_data_size","dispatch","dispatch","execute_action","check_transaction_authorization","check_permission_authorization","check_transaction_authorization","check_permission_authorization","get_permission_last_used","get_account_creation_time","set_blockchain_parameters","get_blockchain_parameters","get_resource_limits","set_resource_limits","set_proposed_producers","is_privileged","set_privileged","get_active_producers","eosio_exit","current_time_point","current_block_time","send_deferred","get_action","read_transaction","cancel_deferred","transaction_size","tapos_block_num","tapos_block_prefix","expiration","get_context_free_data","operator<<","operator>>","check","check","check","check","check","check","operator<<","operator>>","operator<<","operator>>","assert_sha256","assert_sha1","assert_sha512","assert_ripemd160","sha256","sha1","sha512","ripemd160","recover_key","assert_recover_key","operator<<","operator>>","operator<<","operator>>","operator<<","deserialize","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator>>","operator<<","operator>>","operator<<","operator<<","operator>>","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","unpack","unpack","pack_size","pack","operator==","operator!=","operator>","operator<","operator>=","operator<=","operator<<","operator>>","operator<<","operator<<","operator>>","printhex","printl","print","print","print","print","print","print","print_f","print_f","print","operator<<","overloaded","operator<<","operator>>","operator<<","operator>>","seconds","milliseconds","minutes","hours","days","operator<<","operator>>","operator<<","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","check_permission_authorization","print","print","print","print"]},"title":"namespace eosio","level":"1.6.5.3","depth":3,"next":{"title":"namespace _datastream_detail","level":"1.6.5.3.1","depth":4,"path":"namespaceeosio_1_1__datastream__detail.md","ref":"namespaceeosio_1_1__datastream__detail.md","articles":[]},"previous":{"title":"struct Stores","level":"1.6.5.2","depth":3,"path":"struct_stores.md","ref":"struct_stores.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","custom-header-next@git+https://github.com/dskvr/gitbook-plugin-custom-header-next.git","versions-minimal@git+https://github.com/dskvr/gitbook-plugin-versions-minimal.git","favicon","toggle-chapters","nocache"],"pluginsConfig":{"nocache":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-minimal":{"type":"branches","json":"/eosio.cdt/versions.json"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico"},"custom-header-next":{"logo":"/eosio.cdt/images/logo.png","logo_alt":"EOSIO","base_path":"/eosio.cdt","text":"eosio.cdt","navigations":[{"title":"Developers Portal","link":"http://developers.eos.io","id":"back-to-portal"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"namespaceeosio.md","mtime":"2019-03-07T21:19:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-07T21:19:47.525Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["eosio","action","action_wrapper","asset","binary_extension","block_timestamp","blockchain_parameters","const_mem_fun","contract","datastream","datastream< size_t >","extended_asset","extended_symbol","fixed_bytes","ignore","ignore_wrapper","indexed_by","inline_dispatcher","inline_dispatcher< void(T::*)(Args...), Name >","iostream","microseconds","multi_index","name","onerror","overloaded","permission_level","producer_key","producer_schedule","public_key","rope","signature","signed_int","singleton","symbol","symbol_code","time_point","time_point_sec","transaction","transaction_header","unsigned_int","variant_action_wrapper","extension","extensions_type","block_timestamp_type","checksum160","checksum256","checksum512","same_payer","cout","same_payer","cout","unpack_action_data","require_recipient","require_recipient","require_auth","require_auth","has_auth","is_account","dispatch_inline","publication_time","current_receiver","read_action_data","action_data_size","dispatch","execute_action","check_transaction_authorization","check_permission_authorization","check_transaction_authorization","check_permission_authorization","get_permission_last_used","get_account_creation_time","set_blockchain_parameters","get_blockchain_parameters","get_resource_limits","set_resource_limits","set_proposed_producers","is_privileged","set_privileged","get_active_producers","eosio_exit","current_time_point","current_block_time","send_deferred","get_action","read_transaction","cancel_deferred","transaction_size","tapos_block_num","tapos_block_prefix","expiration","get_context_free_data","check","check","check","check","check","check","assert_sha256","assert_sha1","assert_sha512","assert_ripemd160","sha256","sha1","sha512","ripemd160","recover_key","assert_recover_key","operator<<","operator>>","operator<<","operator>>","operator<<","deserialize","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator>>","operator<<","operator>>","operator<<","operator<<","operator>>","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","unpack","unpack","pack_size","pack","operator<<","operator<<","operator>>","printhex","printl","print","print","print","print","print","print","print_f","print_f","print","overloaded","operator<<","operator>>","operator<<","operator>>","seconds","milliseconds","minutes","hours","days","operator<<","operator>>","operator<<","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","operator<<","operator>>","dispatch","operator==","operator!=","operator>","operator<","operator>=","operator<=","check_permission_authorization","print","print","print","print","operator<<"]},"title":"namespace eosio","level":"1.6.5.3","depth":3,"next":{"title":"namespace _datastream_detail","level":"1.6.5.3.1","depth":4,"path":"namespaceeosio_1_1__datastream__detail.md","ref":"namespaceeosio_1_1__datastream__detail.md","articles":[]},"previous":{"title":"struct Stores","level":"1.6.5.2","depth":3,"path":"struct_stores.md","ref":"struct_stores.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc","custom-header-next@git+https://github.com/dskvr/gitbook-plugin-custom-header-next.git","versions-minimal@git+https://github.com/dskvr/gitbook-plugin-versions-minimal.git","favicon","toggle-chapters","nocache"],"pluginsConfig":{"nocache":{},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"versions-minimal":{"type":"branches","json":"/eosio.cdt/versions.json"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico"},"custom-header-next":{"logo":"/eosio.cdt/images/logo.png","logo_alt":"EOSIO","base_path":"/eosio.cdt","text":"eosio.cdt","navigations":[{"title":"Developers Portal","link":"http://developers.eos.io","id":"back-to-portal"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"namespaceeosio.md","mtime":"2019-03-07T22:02:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-07T22:02:53.268Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
